@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa-eye{
+            transform: translateX(-25px);
+            display: none;
+            cursor: pointer;
+        }
+        .fa-eye-slash{
+            transform: translateX(-30px);
+            display: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+     pasword:<input type="password" onkeyup="hide()" id="svg">
+     <i class="fa fa-eye" aria-hidden="true" onclick="toggle1()"></i>
+     <i class="fa fa-eye-slash" aria-hidden="true"  onclick="toggle1()"></i>
+
+     <script>
+        pwd_tag = document.querySelector('#svg');
+        i_tag = document.querySelector('.fa-eye-slash');
+        i1_tag = document.querySelector('.fa-eye');
+
+
+        function hide()
+        {
+            if(pwd_tag.value.length=="0")
+            {
+                i_tag.style.display="none";
+                i_1tag.style.display="none";
+
+            }
+            else if(pwd_tag.value.length>="1")
+            {
+                i_tag.style.display="inline-block";
+            }
+        }
+
+        function toggle1()
+        {
+            // if(op.value.type>='text')
+            // {
+            //     op.value.type
+            //     i1_tag.style.display="inline-block";
+            // }
+            // else(op.vale.type>='text')
+            // {
+            //     i_tag.style.display="inline-block";
+            // }
+            if(pwd_tag.type=='password')
+            {
+                pwd_tag.type='text';
+                i_1tag.style.display=='none';
+                i_tag.style.display=='inline-block';
+
+            }
+            else(pwd_tag.type=='text')
+            {
+                pwd_tag.type='password';
+                i_tag.style.display=='none';
+                i_1tag.style.display=='inline-block';
+
+            }
+
+        }
+
+     </script>
+</body>
+</html>

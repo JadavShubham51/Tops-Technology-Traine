@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.shub{
+    height: 100px;
+    background-color: aqua;
+}
+.part2{
+    position: relative;
+}
+.part-text{
+    position: absolute;
+     top: 40%;
+    /* left: 38%;  */
+    
+}
+.para{
+    
+    text-align: justify;
+}
+.but{  
+    background-color: rgb(57,77,189);
+}

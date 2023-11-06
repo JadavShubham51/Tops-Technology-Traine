@@ -1,0 +1,46 @@
+@media only screen and (max-width:500px){
+    .img{
+       height: 170%;
+       width: 100%;
+    }
+    .bg-1{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+    }
+    .bk-1{
+        position: absolute;
+        top: 110%;
+        /* right: 10%; */
+    }
+    .ser h2::before{
+        content: "";
+        height: 2px;
+        width: 100px;
+        top: 120%;
+    }
+
+    .dor h2::before{
+        content: "";
+        height: 2px;
+        width: 95px;
+        background-color: black;
+        position: absolute;
+        top: 120%;
+        left: -48px;
+    }
+    .pic{
+        
+        height: 100px;
+        width: 100px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    .img-o{
+        transform: scale(1);
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+
+}
+    

@@ -1,0 +1,58 @@
+Q.1)    What are the advantages of Bootstrap? 
+Ans-> Bootstrap 5's advantages are
+ 	-Creating Responsive websites
+	-Mobile-first websites.
+	-Cross-browser compatibility
+	-Implementing JavaScript plugins
+
+Q.2)	What is a Bootstrap Container, and how does it work?
+Ans-> Containers are the most basic layout element in Bootstrap and are required when using our default grid system.
+ 	Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be nested, 
+	most layouts do not require a nested container.
+
+Q.3)	What are the default Bootstrap text settings?
+Ans-> Bootstrap 5 uses a default font-size of 1rem (16px by default), and its line-height is 1.5. In addition, 
+	all <p> elements have margin-top: 0 and margin-bottom: 1rem (16px by default).
+
+Q.4)	What do you know about the Bootstrap Grid System?
+Ans-> Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. 
+	It’s built with flexbox and is fully responsive. Bootstrap's grid system allows up to 12 columns across the page.
+	If you do not want to use all 12 column individually, you can group the columns together to create wider columns.
+	Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size: On a big screen it might look 	better with the content organized in three columns, but on a small screen it would be better if the content items were stacked on 
+	top of each other.
+
+Q.5)  What is the difference between Bootstrap 4 and Bootstrap 5?
+Ans-> Bootstrap 4:
+	-It has 5 tier (xs, sm, md, lg, xl) in grid system.
+	-It has limited colors.
+	-It has jquery and all related plugins.
+	-Bootstrap 4 supports both IE 10 and 11.
+	-Radio buttons, checkboxes have different look in different OS and browsers. The form uses whatever default browsers provide.
+	
+
+	Bootstrap 5:
+	-It has 6 tier (xs, sm, md, lg, xl, xxl) in grid system.
+	-Extra colors added with the looks, A card improved color palette. there are various shades available to choose.
+	-Jquery is removed and switched to vanilla JS with some working plugins	
+	-Bootstrap 5 doesn’t support IE 10 and 11.
+	-The look of form elements will not change, on different OS or browser. The forms can be customized and form controls can be added, 	 they would not depend on browser. 
+
+Q.6)  What is a Button Group, and what is the class for a basic Button Group?
+Ans-> Button groups allow multiple buttons to be stacked together on a single line. This is useful when you want to place items like 	alignment buttons together. You can add on optional JavaScript radio and checkbox style behavior with Bootstrap Button Plugin. 
+	This class is used for a basic button group.
+
+Q.7)  How can you use Bootstrap to make thumbnails?
+Ans-> Add an <a> tag with the class of . thumbnail around an image. This adds four pixels of padding and a gray border.
+	On hover, an animated glow outlines the image.
+
+Q.8)  In Bootstrap 4, what is flexbox?
+Ans-> Flexbox is used to quickly manage the layout, alignment and sizing of grid columns, navigation, components, 
+	and more with a full suite of responsive flexbox utilities. You can also do complex implementations using custom CSS. 
+	Flexbox Properties: Enable flex behaviors.
+
+Q.9)  How can one create an alert in Bootstrap?
+Ans-> Bootstrap provides an easy way to create predefined alert messages: Alerts are created with the .alert class, 
+	followed by one of the four contextual classes .alert-success, .alert-info, .alert-warning or .alert-danger.
+
+Q.10) What is a bootstrap card and how would you create one? 
+Ans-> A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, 	contextual background colors, and powerful display options.
