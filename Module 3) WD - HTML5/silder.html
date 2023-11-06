@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>How to Design Image Slider using jQuery?</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .slider-container {
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+        }
+
+        .slide {
+            width: 100%;
+            height: 500px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .active {
+            opacity: 1;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .prev {
+            left: 0;
+            z-index: 2;
+        }
+
+        .next {
+            right: 0;
+            z-index: 2;
+        }
+
+        .dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            background-color: rgb(230, 169, 15);
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .active-dot {
+            background-color: rgb(199, 112, 50);
+        }
+
+        .heading {
+            color: white;
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            padding: 50px 100px;
+        }
+        .heading h2{
+            font-size: 60px;
+            font-weight: 900;
+        }
+        .heading p{
+            margin-top: 0;
+            font-weight: 500;
+        }
+        .heading button{
+            border: none;
+            background-color: rgb(230, 169, 15);
+            padding: 20px 30px;
+        }
+        @media screen and (max-width: 768px) {
+            .heading h2{
+                font-size: 20px;
+            }
+            .heading p br{
+                display: none;
+            }
+            .slider-container{
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h4>How to Design Image Slider using jQuery?</h4>
+    <div class="slider-container">
+        <div class="heading">
+            <h2>WE DO BIG THINGS <br> WITH BIG IDEAS</h2>
+            <p>Talk To Our Experts And Get Your Dream Home Done. If You Dream Of Designing <br> A New Home That Takes
+                full Advantages of Ther Unique Geography And Views <br>
+                Of Land That You Love
+            </p>
+            <button>Explore Now</button>
+        </div>
+        <div class="slide active">
+            <img src="https://picsum.photos/1200/500?random=1" height="100%" width="100%" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/1200/500?random=2" height="100%" width="100%" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="https://picsum.photos/1200/500?random=3" height="100%" width="100%" alt="Slide 3">
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+        <div class="dots">
+            <div class="dot active-dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            let slideCount = $('.slide').length;
+            let currentIndex = 0;
+            $('.slide').hide();
+            $('.active').show();
+            $('.prev').on('click', function () {
+                currentIndex--;
+                if (currentIndex < 0) {
+                    currentIndex = slideCount - 1;
+                }
+                showSlide(currentIndex);
+            });
+            $('.next').on('click', function () {
+                currentIndex++;
+                if (currentIndex >= slideCount) {
+                    currentIndex = 0;
+                }
+                showSlide(currentIndex);
+            });
+            $('.dot').on('click', function () {
+                currentIndex = $(this).index();
+                showSlide(currentIndex);
+            });
+            function showSlide(index) {
+                $('.slide').hide().removeClass('active');
+                $('.dot').removeClass('active-dot');
+                $('.slide').eq(index).show().addClass('active');
+                $('.dot').eq(index).addClass('active-dot');
+            }
+            showSlide(currentIndex);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Featured Work</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Filters:</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link filter-button" data-filter="all" href="#">All</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link filter-button" data-filter="green-building" href="#">Green Building</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link filter-button" data-filter="green-house" href="#">Green House</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link filter-button" data-filter="interior-design" href="#">Interior Design</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link filter-button" data-filter="office" href="#">Office</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="featured-work">
+    <div class="item green-building">
+      <img src="https://media.istockphoto.com/id/690064334/photo/sustainable-green-building.jpg?s=2048x2048&w=is&k=20&c=r4HdU3TC_a-Lb8RRUvayncIKHzNLq3CKO3tmxkJ3Okc=" height="150px" width="300px" alt="Green Building Image">
+    </div>
+    <div class="item green-house">
+      <img src="https://media.istockphoto.com/id/1226856019/photo/talking-designer-and-client.jpg?s=2048x2048&w=is&k=20&c=XiAkMpGzWjCxjcyr2Xz-nJRidBKC35t7_tXqYdN4b_U="height="150px" width="300px" alt="Green House Image">
+    </div>
+    <div class="item interior-design">
+      <img src="https://media.istockphoto.com/id/1265704346/photo/organic-greenhouse.jpg?s=2048x2048&w=is&k=20&c=qhs9cPp6uXZPsJb_ktUT3fkVRUkU-z-5Q9r4eSvGESY="height="150px" width="300px" alt="Interior Design Image">
+    </div>
+    <div class="item office">
+      <img src="https://media.istockphoto.com/id/1187179171/photo/futuristic-office.jpg?s=2048x2048&w=is&k=20&c=UjrET9h5TkYwlb9cqzpK5A0062mjKb6pktRrjuJjvjs="height="150px" width="300px" alt="Office Image">
+    </div>
+    <!-- Add more items with appropriate categories -->
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+<script >$(document).ready(function() {
+    var $grid = $('.featured-work').isotope({
+      itemSelector: '.item',
+      layoutMode: 'fitRows'
+    });
+  
+    $('.filter-button').on('click', function() {
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+  
+      $('.filter-button').removeClass('active');
+      $(this).addClass('active');
+    });
+  });
+  </script>
+
+</body>
+</html>

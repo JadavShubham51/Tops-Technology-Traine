@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Page</title>
+
+    <style>
+        /* CSS for modal dialog */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 100%;
+            height: 100%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button id="openModalButton">Register</button>
+
+    <!-- Modal Dialog -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Registration Form</h2>
+            <form id="registrationForm">
+                <!-- Add your registration form fields here -->
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required><br>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required><br>
+                <!-- Add more fields as needed -->
+
+                <button type="button" id="registerButton">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Table to Display Registered Data -->
+    <table id="mainTable" border="2">
+        <thead >
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th> action </th>
+                <!-- Add more table headers for other fields -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Registered data will be displayed here -->
+        </tbody>
+    </table>
+</body>
+
+</html>
+<script>
+    // Get modal and buttons
+var modal = document.getElementById('registrationModal');
+var openModalButton = document.getElementById('openModalButton');
+var closeModalButton = document.getElementById('closeModal');
+var registerButton = document.getElementById('registerButton');
+var registrationForm = document.getElementById('registrationForm');
+var mainTable = document.getElementById('mainTable').getElementsByTagName('tbody')[0];
+
+// Open modal when button is clicked
+openModalButton.onclick = function() {
+    modal.style.display = 'block';
+};
+
+// Close modal when close button is clicked
+closeModalButton.onclick = function() {
+    modal.style.display = 'none';
+};
+
+// Register button click event
+registerButton.onclick = function() {
+    // Get form data
+    var firstName = document.getElementById('firstName').value;
+    var lastName = document.getElementById('lastName').value;
+    // Add more fields as needed
+
+    // Create a new row in the table and add data
+    var newRow = mainTable.insertRow();
+    var cell1 = newRow.insertCell(0);
+    var cell2 = newRow.insertCell(1);
+    cell1.innerHTML = firstName;
+    cell2.innerHTML = lastName;
+
+    // Add more cells for other fields
+
+    // Clear the form
+    registrationForm.reset();
+    modal.style.display = 'none';
+};
+
+</script>
