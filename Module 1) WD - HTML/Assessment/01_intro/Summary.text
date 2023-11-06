@@ -1,0 +1,50 @@
+<!--  commente Write your comments here -->
+Download Vs code Editer
+Html-Hyper Text Markup Language
+-creating Web pages
+-structure of a Web page
+
+Element
+element ==start tag to the end tag:
+<h1>parth</h1>
+<h1>tag
+
+  Attributes
+  attributes-- All HTML elements can have
+
+  heading tag
+  <h1>
+    <h2>
+      <h3>
+        <h4>
+          <h5>
+            <h6>
+
+
+              <hr> horizontal line
+
+
+              <br> line break
+
+
+              <pre>  poper formate text
+
+  <b> bold
+
+  <a> ancer tag
+        
+  <strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+<q>cotation
+<address> address
+    
+img tag
+<img src="pic_trulli.jpg" alt"">
+    

@@ -1,0 +1,115 @@
+What is html?
+--> It is html stands for Hypertext Markup Language.Its is world wide web use. Its is standard text fromating language. which is used to create page and display pages.
+
+Html structure :- 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="" http-equi="file name"> 
+	<title>document</title>
+	<link style="icon" href="path"></link>
+</head>
+<body>
+	anjli
+	shubham
+	
+
+</body>
+
+</html> 
+
+HTML Elements and tag deffece
+
+html elements :- <h1>shubham</h1> tag and contain its combine used this is html elements
+
+html tag :- <h1></h1>
+		<p></p>
+
+html attributes
+ a tag its use link navigate page 
+<a href="www.google.com">google</a>
+<img src="www.images.sfsajm" alt="someting missing file">
+
+html basic tag :- 
+h1
+h2
+h3
+h4
+h5
+h6
+p
+a
+img
+
+
+formating tag 
+b -bold , strong
+i -cursive , em
+u - underline , ins
+
+<del>desce</del>
+    x<sub>2</sub>
+    x<sup>2</sup>
+    <small></small>
+    <big></big>
+    <mark>shiuhi</mark>
+<marquee direction="right">sjbsjfbijsbfijbnijsnjfhnasuin</marquee>
+
+void tag/ self closing tag
+	<br>
+	<hr>
+	<img>
+    
+
+html layout :- header,nav,artical,aside,section,footer
+
+<script>
+	
+</script>
+		
+-> this is a single line comments
+ <!-- <marquee direction="right">sjbsjfbijsbfijbnijsnjfhnasuin</marquee> -->
+-> this is multiline comments
+
+--> https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts
+--> this site font  update
+
+table list :- three type of list in 
+
+	1) order list :- <ol type="A" > <!-- 1==> is defualat,a,A,i,I-->
+			<li>123</li>
+			<li>123</li>
+			<li>123</li>
+		</ol>
+	2) unorder list :- 
+<ul typle="circle" >   <!-- circle,square,disc ==> is a defulat-->
+			<!-- <li>one</li>   list items-->
+			<li>one</li>
+			<li>one</li>
+			<li>one</li>
+		</ul>
+	3) description list:-
+		<dl>
+			<dt>coffee</dt> <!-- description Term -->
+			<dd>hot</dd> <!-- description Data -->
+			<dd>cold</dd>
+		</dl>
+
+	list dropdown menu select tag 
+		<select name="" id="">
+			<optgroup>
+				<option value="" hidden>------selectcatgory</option>
+				<option value="shubham" selected>shubham</option>
+				<option value="sujal">sujal</option>
+				<option value="nav">nav</option>
+				<option value="nsh">nsh</option>
+			</optgroup>
+
+		</select>
+
+image or caption rakh sakte he
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>

@@ -1,0 +1,48 @@
+>form tag
+
+action=""- link other page
+name="fname"-form_name
+method="get/post" method get and post
+get show all data
+post hide all data
+lable tag used to given name 
+
+<form action="" method="get" name="myform">
+
+  <lable for="name">FirstName</lable>
+- <input type="text" name="fname" id="name" /><br><br>
+
+    <input type="submit" value="Save">
+
+</form>
+
+
+
+all inputtag
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text"> (default value)
+<input type="time">
+<input type="url">
+<input type="week">
+
+fieldset tag used formet form with name 
+    <fieldset>
+                <legend>Signup Form</legend>
+    </fieldset>

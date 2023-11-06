@@ -1,0 +1,11 @@
+html ascii:- ASCII was the first character set (encoding standard) used between computers on the Internet. Both ISO-8859-1 (default in HTML 4.01) and UTF-8 (default in HTML5), are built on ASCII. The ASCII Character Set ASCII stands for the "American Standard Code for Information Interchange"
+
+The ASCII character set :-
+
+-->English letters (A-Z)
+-->Numbers (0-9)
+-->Special characters like ! $ + - ( ) @ < >.
+
+Identical to ASCII for the first 127 characters
+Special characters from 128 to 159
+Identical to UTF-8 from 160 to 255

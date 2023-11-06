@@ -1,0 +1,42 @@
+what is internet ?
+-> Global system of inyterconnected computer networks that uses the internet protocol suite(TCP/IP) to communicate between netwroks and devices. 
+
+HTTP/HTTPS 
+http :- hyper text transfer protocol
+https :- hyper text transfer protocol security/secure
+
+www :-  world wide web 
+
+Domain name and top domain name
+
+Domain name :- its is unifrom resource locator (URL) used to access web sites \
+	urL :- http://
+
+website:- It is a collection of webpages which gives information.
+
+www:- world wide web(golbal server)
+
+url:- unifrom resource locator
+
+Domain :- .com/.in/.info/.edu/.gov/.blogspot
+
+Html is markup language and not a programming language
+
+Markup Language:-
+
+1) It is a Stadard text formating 
+2) tag and element alweys use
+3) It is not case sensitive language
+4) It does not show error
+
+structure of html:-
+<!Doctype html>
+<html>
+<head>
+    <title></title>
+<head>
+<body>
+    <!-- some tag -->
+    
+</body>
+</html>

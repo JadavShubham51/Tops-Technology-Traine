@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+</head>
+<body>
+	<!-- Form methods
+
+	get ==> default ==> not secure ==> shows data in URL =>limited
+
+	post ==>    secure ==> does not shows data in URL  => not limited -->
+
+	<center>
+		<form>
+			
+			<!-- name : <input type="text" name="" required pattern="[a-zA-z]+" title="3 to 6 characters only..."> -->
+
+			name : <input type="text" name="" required pattern="[a-zA-z]{3,6}" title="3 to 6 characters only...">
+
+			<br><br>
+			E-mail: <input type="email" id="email" required name="myGeeks"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
+
+
+
+			<br><br>
+			<!-- Mobile<input type="text" required title="10 digits only" pattern="[0-9]+"> -->
+
+			Mobile<input type="text" required title="10 digits only" maxlength="10" pattern="[0-9]{10}">
+
+			<br><br>
+			Date:<input type="date" name=""><br><br>
+			password:<input type="password" name="pwd" maxlength="6" minlength="3"><br><br>
+
+			gender:<input type="radio" name="gender"> Male <input type="radio" name="gender"> Female <br><br>
+
+			Languages: <input type="checkbox" name=""> Hindi
+			<input type="checkbox" name=""> Gujarati
+			<input type="checkbox" name=""> English
+
+			<br><br>
+
+
+			Select Your Country:
+			<select>
+				<option hidden> --- Select Your Country --- </option>
+				<option>India</option>
+				<option>Usa</option>
+				<option>UAE</option>
+				<option>Australia</option>
+			</select>			
+
+			<br><br>
+
+
+			Address: <textarea rows="10" cols="50"></textarea>
+
+			<br><br>
+			Date-Time:<input type="datetime-local" name=""><br><br>
+
+			Color: <input type="color" name=""><br><br>
+
+			Quantity:<input type="number" name="" max="5" min="1"><br><br>
+
+			Upload your Image:<input type="file" name="" multiple><br><br>
+
+			<input type="submit" name="" value="Register"><br><br>
+			<input type="reset" name="" value="yutyu"><br><br>
+
+
+
+		</form>
+	</center>
+	<picture>
+		<!-- <img src="" alt="">  le skate he-->
+		<!-- media="(min-width:650px) media banava bate srcset="imge path dene ke liye" -->
+		<source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+		<source media="(min-width:465px)" srcset="img_white_flower.jpg">
+		<img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+	  </picture>
+
+</body>
+</html>
+
+
+
+
+
+

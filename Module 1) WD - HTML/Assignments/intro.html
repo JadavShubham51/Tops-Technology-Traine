@@ -1,0 +1,169 @@
+<!DOCTYPE html> //information to browser about what document type to export
+<!-- html means :- hyper text markup language -->
+<html lang="en"> //root element hold karke 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        p{
+            color: blue;
+        }
+        .name{
+            color: rosybrown;
+        }
+        #id{
+            color: black;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <!-- HTML Basic Tags -->
+    <h1>shubham</h1> heading
+    <h2>anjli maam</h2>
+    <h3>manav sir</h3>
+    <h4>nirav sir</h4>
+    <h5>chetan sir</h5>
+    <h6> abhinav</h6>
+    <p>paragrph</p> // paragrpgh
+    <a href="https://www.google.co.in/">google</a> link 
+    <img src="" alt="">
+
+    
+
+    <!-- formating tag -->
+    <b></b> <strong></strong>
+    <i></i> <em>shubham</em>
+    <u></u> <ins>ss</ins>
+    <del>desce</del>
+    x<sub>2</sub>
+    x<sup>2</sup>
+    <small></small>
+    <big></big>
+    <mark>shubssh</mark>
+    <!-- <marquee direction="right">sjbsjfbijsbfijbnijsnjfhnasuin</marquee> -->
+
+    <br>
+    <hr>
+
+    <!-- html element  -->// html not a case sensitive  
+    <tagname>sfjnaskj</tagname>
+    <!-- html tag -->
+    <p>gfgc</p>
+
+    <!-- html attribute -->
+    <a href="" style="color: red;">shu</a>
+    <img src="" alt="" width="" height="">
+
+    <!-- html layout  -->
+    <header></header>
+    <nav></nav>
+    <article></article>
+    <aside></aside>
+    <section></section>
+    <footer></footer>
+
+    <table border="2">
+        <tr>
+            <th>shubham &nbsp;</th>
+            <th>shubham2</th>
+        </tr>
+        <tr>
+            <td>sh1</td>
+            <td>sh3</td>
+            <!-- <td>sh3</td> -->
+        </tr>
+        <tr>
+            <td>sh2</td>
+            <td>sh4</td>
+        </tr>
+        <tr>
+            <td>sh5</td>
+            <td>sh6</td>
+        </tr>
+        <caption>title is</caption>
+    </table>
+
+    css basic:- cascading style sheet. popular for style language which is used with html to design html page
+
+    this a three type css in there
+    1) inline css
+    2) internal css
+    3) extrnal css
+    
+
+
+
+    <p style="color: red;">shubnasklm</p> // inline
+    <p class="name">sfhaslmf</p>
+    <p id="id">shubasfsaasklm</p>
+    <p>shasfasklm</p>
+    <p>shubnasklm</p>
+
+    <button id="btn" onclick="chnage()">start</button>
+    <button class="btn1">start</button>
+    
+    <div class="test-btn">text</div>
+    <div class="test-btn">text</div>
+    <div class="test-btn">text</div>
+    <div class="test-btn">text</div>
+  
+    <button onClick="qselector()">
+        querySelector
+    </button>
+  
+    <button onClick="qselectorall()">
+        querySelectorAll
+    </button>
+
+</body>
+</html>
+<script>
+
+    // var gobal 
+    // let 
+    // const block scope
+
+    // object this key word to use
+    let name ={ 
+        name:"shuham",
+        name1:"safs"
+    }
+    console.log(name.name)
+    console.log(name.name1)
+
+
+    let btn = document.getElementById("btn");
+    let btn2 = document.getElementsByClassName("btn2")
+   
+
+    function chnage(){
+        btn.style.background="red";
+        btn.style.width="100px";
+        btn.style.height="100px";
+    }
+    console.log(btn)
+
+    function qselector() {
+            document.querySelector(".test-btn")
+                .style.color = "lightcoral";
+        }
+  
+        function qselectorall() {
+            var x = document
+                .querySelectorAll(".test-btn");
+            
+
+            console.log(x)
+  
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.color = "blue";
+            }
+        }
+    
+</script>
+
+

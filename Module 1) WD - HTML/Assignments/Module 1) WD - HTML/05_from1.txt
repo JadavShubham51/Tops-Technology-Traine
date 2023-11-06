@@ -1,0 +1,13 @@
+html Elements :- 
+
+<input> :-  type="" id 
+<label> for:- 
+<select> drop meneu banava
+<textarea>
+<button>
+<fieldset>:- ander use <legend> shjubjs</legend>
+<legend> :- group bar line use kare ke use hota he
+<datalist>
+<output>
+<option>
+<optgroup>
