@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(a,b,...restexam){
+            console.log(restexam);
+        }
+
+        //list of item converted into array
+        sum(1,2,3,4,5)
+
+        Math.min(1,2,3) // 1
+
+        let spreadExample =[1,2,3];
+
+        //convert array into list pf items
+        console.log(Math.min(...spreadExample))
+
+        //this is time to marge the array in the spared opertor using
+
+        var arra1 = [1,2,3,4,5] 
+        var  arra2 = [2,4,5,56,23]
+
+        let arra12 = [...arra1,...arra2]
+
+        console.log(arra12[8]);
+    </script>
+</body>
+</html>

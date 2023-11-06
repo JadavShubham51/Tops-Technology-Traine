@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather API Search</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="location-input" placeholder="Enter a location">
+        <button id="search-button">Search</button>
+    </div>
+    <div id="weather-info"></div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const locationInput = document.getElementById("location-input");
+        const searchButton = document.getElementById("search-button");
+        const weatherInfo = document.getElementById("weather-info");
+
+        // Event listener for the search button
+        searchButton.addEventListener("click", function () {
+            const location = locationInput.value;
+            if (location) {
+                // Fetch weather data from the API
+                fetchWeatherData(location);
+            } else {
+                alert("Please enter a location.");
+            }
+        });
+
+        // Function to fetch weather data from the API
+        function fetchWeatherData(location) {
+            // Replace with your weather API URL and API key
+            fetch(`https://api.opencagedata.com/geocode/v1/json?q=${location}&key=faed4d9eb29d483a866000c901ccb680`)
+                .then(response => response.json())
+                .then(data => {
+                    // Display the weather data and store it in cookies
+                    displayWeatherData(data);
+                    storeWeatherDataInCookies(data);
+                    // console.log(data.results[0].formatted);
+                })
+                .catch(error => {
+                    console.error('Error fetching weather data:', error);
+                });
+        }
+
+        // Function to display weather data and store it in cookies
+        function displayWeatherData(data) {
+            // const { main, weather } = data;
+            weatherInfo.innerHTML = `
+            <p>Temperature: ${data.results[0].annotations.DMS.lat}°C</p>
+            <p>lag: ${data.results[0].annotations.DMS.lng}°C</p>
+            <p>City: ${data.results[0].formatted} </p>
+        `;
+        }
+
+        // Function to store weather data in cookies
+        function storeWeatherDataInCookies(data) {
+            // Store relevant data in cookies
+            document.cookie = `temperature=${data.results[0].annotations.DMS.lat}`;
+            document.cookie = `lag=${data.results[0].annotations.DMS.lng}`;
+            document.cookie = `City=${data.results[0].formatted}`;
+            
+        }
+    });
+
+</script>
+
+</html>

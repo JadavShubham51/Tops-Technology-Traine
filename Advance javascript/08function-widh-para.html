@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function callback(){
+            console.log("this is callback function...!");
+        }
+
+        function Test(x){
+            console.log((x));
+            callback()
+        }
+
+        Test(1)
+        Test("shu")
+        Test(true)
+        Test([1,2,3,"hi",true,[34,56,78,{name:"Vidhi",age:23}]])
+        Test({name:"Vidhi",age:23})
+        // Test(CallBack())
+    </script>
+</body>
+</html>

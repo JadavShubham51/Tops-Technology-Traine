@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>API Form</title>
+</head>
+
+<body>
+    <h1>Submit Data to API</h1>
+    <form id="apiForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <div id="response"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const apiForm = document.querySelector("#apiForm");
+            const responseDiv = document.querySelector("#response");
+
+            apiForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const apiUrl = "https://jsonplaceholder.typicode.com/users"; // Replace with your API URL
+
+                const formData = new FormData(apiForm);
+
+                fetch(apiUrl, {
+                    method: "POST", // Specify the HTTP method
+                    headers: {
+                        Accept: "application/json", // Set the Accept header to specify the response format
+                        // You can also add other headers if necessary
+                    },
+                    body: JSON.stringify(Object.fromEntries(formData))
+                })
+                    .then((response) => response.json())
+                    .then((data) => {
+                        responseDiv.innerHTML = "Response from API: " + JSON.stringify(data);
+                    })
+                    .catch((error) => {
+                        console.error("Error submitting data: " + error);
+                    });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
