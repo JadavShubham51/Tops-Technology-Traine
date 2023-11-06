@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .xyz 
+        {
+            animation: test 1s;
+        }
+
+        @keyframes test 
+
+        {
+            from{transform: scale(1);}
+            to{
+                transform: scale(1.5);
+            }
+        }
+        .slider
+        {
+            height: 500px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slider">
+
+    <img src="/TASK/imges/car1.jpg" alt="" height="500px" width="100%" class="i" id="i">
+    <img src="/TASK/imges/car2.jpg" alt="" height="500px" width="100%" class="i"  id="i">
+    <img src="/TASK/imges/car3.jpg" alt="" height="500px" width="100%" class="i"  id="i">
+    <img src="/TASK/imges/car4.jpg" alt="" height="500px" width="100%" class="i"  id="i">
+</div>
+    
+    <script>
+ index =0;
+       function slider()
+       {
+       
+        // img_arr = document.getElementById('i');
+        // img_arr = document.getElementsByClassName('i');
+       img_arr = document.getElementsByTagName('img');
+        console.log(img_arr);
+
+        // img_arr[0].style.display = "none";
+        // img_arr[1].style.display = "none"
+        // img_arr[2].style.display = "none"
+        // img_arr[3].style.display = "none"
+
+        for(i=0;i<img_arr.length;i++)
+        {
+            img_arr[i].style.display = "none";
+            // img_arr[i].style.scale = "2"
+            img_arr[i].classList.add('xyz');
+        }
+
+        img_arr[index].style.display = "block";
+        index++;//1
+
+        if(index==4)
+        {
+            index=0;
+        }
+
+        setTimeout("slider()",1000);
+
+        // setTimeout(slider,1000);
+
+
+       }
+
+       slider()
+    </script>
+</body>
+</html>

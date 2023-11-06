@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .color-box {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="color-input" placeholder="Enter a color name">
+    <button onclick="addColor()">Add Color</button>
+    <div id="color-list"></div>
+
+    <script>
+        let colors = [];
+
+        function addColor() {
+            const colorInput = document.getElementById('color-input');
+            const colorList = document.getElementById('color-list');
+            const colorName = colorInput.value.trim();
+
+            if (colorName) {
+                colors.push(colorName);
+                colorInput.value = '';
+
+                updateColorList();
+            }
+        }
+
+        function removeColor(index) {
+            colors.splice(index, 1);
+            updateColorList();
+        }
+
+        function updateColorList() {
+            const colorList = document.getElementById('color-list');
+            colorList.innerHTML = '';
+
+            for (let i = 0; i < colors.length; i++) {
+                const colorBox = document.createElement('div');
+                colorBox.style.backgroundColor = colors[i];
+                colorBox.className = 'color-box';
+                colorBox.textContent = colors[i];
+
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove';
+                // removeButton.style.background = "lightcoral";
+                removeButton.addEventListener('click', () => removeColor(i));
+
+                colorList.appendChild(colorBox); //colorbox add 
+                colorList.appendChild(removeButton); //same colorbox in remove button
+            }
+        }
+    </script>
+</body>
+</html>

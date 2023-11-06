@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="in1" value="100" >
+    
+    <b>Convert to</b>
+    
+    <select name="" id="s1" onchange="currencyConvert()">
+        <option hidden >---Select your currency--</option>
+        <option value="INR">INR- Indian National Rupee</option>
+        <option value="USD">USD- United States Dollar</option>
+        <option value="EUR">EUR- Euro</option>
+        <option value="QAR">QAR- Qatar Riyal</option>
+        <option value="JPY">JPY- Japanese Yen</option>
+        <option value="THB">THB- Thailand Baht</option>
+
+    </select>
+
+        
+    &nbsp;
+    =
+    <b id="res"></b>
+
+    <script>
+        input1 = document.getElementById('in1');
+        select1 = document.getElementById('s1');        
+
+        result = document.getElementById('res');
+
+        console.log(input1.value);
+        console.log(select1.value) ;
+
+
+        // z = input1.value * select1.value ;
+        
+        function currencyConvert()
+        {
+            if(select1.value=="INR")
+            {
+                INR = input1.value * 1 ;
+                result.innerHTML= INR + "₹";
+            }
+            else if(select1.value=="USD")
+            {
+                USD = input1.value * 0.012 ;
+                result.innerHTML= USD + "$";
+            }
+            else if(select1.value=="EUR")
+            {
+                EUR = input1.value *0.011 ;
+                result.innerHTML= EUR + "€";
+            }
+            else if(select1.value== "QAR")
+            {
+                QAR = input1.value * 0.044 ;
+                result.innerHTML= QAR + "ر.ق";
+            }
+            else if(select1.value=="JPY")
+            {
+                JPY = input1.value * 1.6 ;
+                result.innerHTML= JPY + "¥";
+            }
+            else if(select1.value=="THB")
+            {
+                THB = input1.value * 0.41 ;    
+                result.innerHTML= THB + "A$";
+            }
+           
+            result.innerHTML= z+"₹";
+
+        }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+   <!-- <input type="radio" name="gender" id="m">Male <br>
+   <input type="radio" name="gender" id="f">Female <br>
+   <input type="radio" name="gender" id="f">ohter <br>
+   <input type="submit"  id="" onclick="valid()"> -->
+   <input type="radio" name="gender">Male <br>
+   <input type="radio" name="gender">Female <br>
+   <input type="radio" name="gender">ohter <br>
+   <input type="submit"  id="" onclick="valid()">
+</form>
+<script>
+    // m_tag = document.getElementById('m');
+    // f_tag = document.getElementById('f');
+
+    valid_tag = document.getElementsByTagName('input');
+
+    function valid()
+    {
+        // if(valid_tag[0].checked==false && valid_tag[1].checked==false)
+        // {
+        //     alert("do you select male & Female & ohter?");
+        // }
+        
+        if(valid_tag[0,1].checked==false)
+         {
+             alert("do you select male & Female & ohter?");
+         }
+    }
+    // function valid()
+    // {
+    //     if(m_tag.checked==false && f_tag.checked==false)
+    //     {
+    //         alert("do you select male & Female & ohter?");
+    //     }
+    // }
+</script>
+</body>
+</html>

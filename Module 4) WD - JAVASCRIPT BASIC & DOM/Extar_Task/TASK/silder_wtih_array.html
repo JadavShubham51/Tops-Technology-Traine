@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>silder</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0;
+        }
+        .container
+        {
+            position: relative;
+            /* width: 100%; */
+        }
+        .imga
+        {
+            position: absolute;
+            display: inline;
+            transition: 1s;
+            /* left: 90%; */
+        }
+        @keyframes test1
+        {
+            from{
+                transform: translateX(0%);
+            }
+            to{
+                transform: translateX(-100%);
+            }
+        }
+        @keyframes test
+        {
+            from{
+                transform: translateX(100%);
+            }
+            to{
+                transform: translateX(0%);
+            }
+        }
+       
+        .abc
+        {
+            animation: test1 1s linear;
+        }
+        .xyz
+        {
+            animation: test 1s linear ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="imges/car1.jpg" alt="" height="700px" width="100%" class="imga">
+        <img src="imges/car2.jpg" alt="" height="700px" width="100%" class="imga">
+        <img src="imges/car3.jpg" alt="" height="700px" width="100%" class="imga">
+        <img src="imges/car4.jpg" alt="" height="700px" width="100%" class="imga">
+    </div>
+
+    <script>
+        img_arry =    document.getElementsByTagName('img');
+        index = 0;
+
+      
+
+        function silder()
+        {
+            img_arry[0].style.visibility = "hidden";
+            img_arry[1].style.visibility = "hidden";
+            img_arry[2].style.visibility = "hidden";
+            img_arry[3].style.visibility = "hidden";
+            // img_arry[index].style.display = "inline";
+            console.log(img_arry.length);
+            
+            for (var x=0;x<img_arry.length;x++)
+            {
+                img_arry[index].style.visibility = "visible";
+           
+                img_arry[index].classList.add('xyz');
+                img_arry[index+1].style.visibility = "visible";
+                img_arry[index+1].classList.add('abc');
+                
+                
+            }
+            index++;
+
+            if(index == img_arry.length-1)
+            {
+                index=0;
+            }
+            setTimeout(silder,1700);
+            
+
+        }
+        silder();
+
+    </script>
+</body>
+</html>

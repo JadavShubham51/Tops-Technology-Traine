@@ -1,0 +1,118 @@
+javascript Array methods
+
+1. => Coverting Arrays to strings
+    The JavaScript method toString() converts an array to a string of (comma separated) array values.
+
+    example=> 
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo").innerHTML = fruits.toString();
+
+    output => Banana,Orange,Apple,Mango
+
+2. join()
+    The join() method also joins all array elements into a string.
+
+    It behaves just like toString(), but in addition you can specify the separator:
+
+    example =>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo").innerHTML = fruits.join(" * ");
+
+    output =>
+    Banana * Orange * Apple * Mango
+
+
+3. Popping and Pushing
+    When you work with arrays, it is easy to remove elements and add new elements.
+
+    This is what popping and pushing is:
+
+    Popping items out of an array, or pushing items into an array.
+
+
+    ==> javascript Array pop()
+    The pop() method removes the last element from an array:
+
+    example =>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.pop();
+
+    ek word is remove in pop use.
+    output=> Banana,Orange,Apple
+
+    ==> JavaScript Array push()
+    The push() method returns the new array length:
+
+    example =>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    let length = fruits.push("Kiwi");
+
+    output =>
+    Banana,Orange,Apple,Mango,Kiwi
+
+4. JavaScript Array shift()
+    The shift() method removes the first array element and "shifts" all other elements to a lower index.
+
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.shift();
+
+    remover karse first element ne and left side kari dese baki na element ne
+    output =>Orange,Apple,Mango
+
+5. JavaScript Array unshift()
+    The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+
+    example =>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.unshift("Lemon");
+
+    unshift to first to add the elements
+    unshift is index vise work kari sakase []
+    output => Lemon,Banana,Orange,Apple,Mango 
+
+6. javascript Array length
+    The length property provides an easy way to append a new element to an array:
+
+    The length property provides an easy way to append new elements to an array without using the push() method:
+
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits[fruits.length] = "Kiwi";
+
+    without use to append and push() easy to append
+    output => Banana,Orange,Apple,Mango,Kiwi
+
+7. javascript Array delete()
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    delete fruits[0];
+
+    delete is use one elements
+    output =>    Orange,Apple,Mango
+
+8. Merging (Concatenating) Arrays
+
+    The concat() method creates a new array by merging (concatenating) existing arrays:
+
+    example => 
+    const myGirls = ["Cecilie", "Lone"];
+    const myBoys = ["Emil", "Tobias", "Linus"];
+
+    const myChildren = myGirls.concat(myBoys); 
+
+    two varible ne append kari ne aapse
+    output =>  Cecilie,Lone,Emil,Tobias,Linus
+   
+9. JavaScript Array splice()
+    The splice() method can be used to add new items to an array:
+
+    example => 
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.splice(2, 0, "Lemon", "Kiwi");
+
+    output => Banana,Lemon,Kiwi,Orange,Apple,Mango
+
+    The first parameter (2) defines the position where new elements should be added (spliced in).
+    The second parameter (0) defines how many elements should be removed.
+    The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+    The splice() method returns an array with the deleted items:
+
+    

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="radio" id="m" name="gender" class="g1">Male <br><br>
+    <input type="radio" id="f" name="gender" class="g1">Female <br><br>
+
+    <input type="submit" onclick="valid()">
+
+    <script>
+   
+
+        // function valid(){
+        //     m_tag = document.getElementById('m');
+        // f_tag = document.getElementById('f');
+        //     if(m_tag.checked==false && f_tag.checked==false){
+        //         alert("Aleret");
+        //     }
+        // }
+
+        // function valid(){
+        //     tiger = document.getElementsByTagName('input');
+        //     if(tiger[0].checked==false && tiger[1].checked==false){
+        //         alert("Select Gender Please!");
+
+        //     }
+        // }
+
+        function valid(){
+            G_tag=document.getElementsByClassName('g1');
+            if(G_tag[0,1].checked==false){
+                alert("Select Gender Please!");
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

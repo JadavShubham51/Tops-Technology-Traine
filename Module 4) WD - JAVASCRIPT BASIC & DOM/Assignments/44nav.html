@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide 
+        {
+            display: none;
+        }
+
+
+        .nav 
+        {
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+
+        <span id="menu" class="menu" >menu</span>
+        <ul id="list" class="list">
+            <li><a href="">HOme</a></li>
+              <li><a href="">HOme</a></li>
+                <li><a href="">HOme</a></li>
+                  <li><a href="">HOme</a></li>
+        </ul>
+    </div>
+
+    <script>
+
+        m = document.querySelector('.menu');
+        l = document.querySelector('.list');
+
+        m.addEventListener("click",test)
+
+        function test()
+        {
+            l.classList.toggle('hide');
+        }
+
+        // test()
+
+    </script>
+</body>
+</html>

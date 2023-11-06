@@ -1,0 +1,116 @@
+1. => javascript string slice()
+    slice() extracts a part of a string and return the extracted part in a new string.
+    this method as two part:start and end
+
+    example:- let text = "shubham, sujal, papa";
+              let part = text.slice(9, 14);
+              output is => sujal
+              
+              let part = text.slice(9);
+              output => sujal,papa
+
+2. => substring() is similar to slice().
+
+3. => substr() is similar to slice().
+
+4. => replace() 
+    replace() method replaces a specified value with another value in a string:
+    replace() is case sensitive is upper case is not work.
+    let text = "please visit name";
+    let newtext = text.replace("name","shubham");
+
+    output=> please visit shubham.
+
+5. => replaceAll()
+    The replaceAll() method allows you to specify a regular expression instead of a string to be replaced.
+    jaya chnage kari skay.
+    badhe use thay 
+    replce similar replaceALL() synatax;
+
+ 6. => toUpperCase() and toLowerCase()
+
+    A string is converted to upper case with toUpperCase();
+    A string is converted to upper case with toLowerCase();
+
+    example:-
+    let text1 = "Hello World!";
+    let text2 = text1.toUpperCase();
+    output:- HELLO WORLD!
+
+    let text1 = "Hello World!";
+    let text2 = text1.toUpperCase();
+    output:- hello world!
+
+7. => string concat()
+
+    concat() joins two or more strings:
+    let text1 = "Hello";
+    let text2 = "World";
+    let text3 = text1.concat(" ", text2);
+
+    output=> hello world.
+
+8. => string trim()
+
+    The trim() method removes whitespace from both sides of a string:
+
+    let text1 = "      Hello World!      ";
+    let text2 = text1.trim();
+
+    space is not count in trim() use.
+    output=> hello word. 
+
+9. => string padStart() and padend()
+
+    The padStart() method pads a string with another string:
+    let text = "5";
+    let padded = text.padStart(4,"x");
+
+    start thi count thase xxx and next 5 is print.
+    output => xxx5 .
+
+    The padEnd() method pads a string with another string:
+     let text = "5";
+    let padded = text.padEnd(4,"x");
+
+    output => 5xxx .
+
+10. => string Characters 
+    there is there method 
+    ==> charAt(position) 
+    The charAt() method returns the character at a specified index (position) in a string:
+    example=>
+        let text = "HELLO WORLD";
+        let char = text.charAt(0);
+
+        output => H 
+
+    ==> charCodeAt(position)
+    The charCodeAt() method returns the unicode of the character at a specified index in a string:
+
+    The method returns a UTF-16 code (an integer between 0 and 65535).
+
+    example =>
+    let text = "HELLO WORLD";
+    let char = text.charCodeAt(0);
+
+    output => 72
+
+    ==> Property access[]
+     Property access[] is similar to  charAt(position) 
+
+11. split()
+    A string can be converted to an array with the split() method:
+
+    text.split(",")    // Split on commas
+    text.split(" ")    // Split on spaces
+    text.split("|")    // Split on pipe
+
+    array covert thay 
+    text = {1,2,3,4,5}
+    
+    output=>
+    arrray[0] = 1
+
+
+

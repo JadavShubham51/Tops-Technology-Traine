@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <img src="" alt="" height="300px" width="300px" id="i1">
+
+    <button onclick="ChnageImage()">Change Me</button>
+    <button onclick="ChnageImage1()">kjsdhf</button>
+
+    <script>
+        im = document.getElementById('i1');
+        im.src = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spring-flowers-1613759017.jpg?crop=0.669xw:1.00xh;0.0635xw,0&resize=640:*";
+
+       function ChnageImage()
+       {
+        im.src= "https://cdn2.stylecraze.com/wp-content/uploads/2013/07/25-Most-Beautiful-Blue-Flowers.jpg"
+
+        im.style.borderRadius ="50%";
+       }
+
+       function ChnageImage1()
+       {
+        im.src= "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/spring-flowers-1613759017.jpg?crop=0.669xw:1.00xh;0.0635xw,0&resize=640:*"
+
+        im.style.borderRadius ="50%";
+       }
+    </script>
+</body>
+</html>

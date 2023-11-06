@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple_calc</title>
+</head>
+<body>
+
+    <!-- first all two input values get and number basic add,sub,mul,division, -->
+    number1: <input type="text" name="" id="n1" > <br><br>
+    number2: <input type="text" name="" id="n2" > <br><br>
+
+    <h2 id="result"></h2>
+
+    <button onclick=" addNums()">+</button>
+    <button onclick=" subNums()">-</button>
+    <button onclick=" mulNums()">*</button>
+    <button onclick=" divNums()">/</button>
+    <button onclick=" modNums()">%</button>
+
+
+    <script>
+
+        num1 = document.getElementById('n1');
+        num2 = document.getElementById('n2');
+
+        console.log(n1);
+        console.log(n1.value);
+        console.log(n2);
+        console.log(n2.value);
+
+        function addNums()
+        {
+            res = parseInt(n1.value) + parseInt(n2.value);
+            //console.log(res);
+
+		    // document.write(res);
+
+            document.getElementById('result').innerHTML = res;
+
+
+        }
+        function subNums()
+        {
+            res = parseInt(n1.value) - parseInt(n2.value);
+            //console.log(res);
+
+		    // document.write(res);
+
+            document.getElementById('result').innerHTML = res;
+
+
+        }
+        function mulNums()
+        {
+            res = parseInt(n1.value) * parseInt(n2.value);
+            //console.log(res);
+
+		    // document.write(res);
+
+            document.getElementById('result').innerHTML = res;
+
+
+        }
+        function divNums()
+        {
+            res = parseInt(n1.value) / parseInt(n2.value);
+            //console.log(res);
+
+		    // document.write(res);
+
+            document.getElementById('result').innerHTML = res;
+
+
+        }
+        function modNums()
+        {
+            res = parseInt(n1.value) % parseInt(n2.value);
+            //console.log(res);
+
+		    // document.write(res);
+
+            document.getElementById('result').innerHTML = res;
+
+
+        }
+
+
+
+
+
+    </script>
+
+    
+</body>
+</html>

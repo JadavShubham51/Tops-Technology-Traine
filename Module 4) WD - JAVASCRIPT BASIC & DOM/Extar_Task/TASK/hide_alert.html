@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Paragraph and Show Alert</title>
+    
+</head>
+<body>
+    <p id="myParagraph">This is a paragraph. Click the button below.</p>
+    <button id="hideButton">Hide Button</button>
+    
+</body>
+</html>
+<script>
+   // Get references to the paragraph and button using their IDs
+   const paragraph = document.getElementById('myParagraph');
+        const hideButton = document.getElementById('hideButton');
+
+        // Add click event listener for hiding the paragraph and button
+        hideButton.addEventListener('click', () => {
+            // Hide the paragraph
+            paragraph.style.display = 'none';
+
+            // Hide the button
+            hideButton.style.display = 'none';
+
+            // Show an alert
+            alert('Button hidden, and paragraph hidden.');
+        });
+</script>

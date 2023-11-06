@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applycssinjs</title>
+
+    <style>
+        .xyz
+        {
+            height: 200px;
+			width: 450px;
+			background:linear-gradient(red,blue);
+			color: #fff;
+			text-align: center;
+			line-height: 200px;
+			font-size: 34px;
+			font-family:cursive;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1 id="header">
+    Heading 1
+</h1>
+
+<h2 id="test">
+	
+	Heading 2
+</h2>
+
+<script>
+    var h1_tag = document.getElementById('header');
+    var h2_tag =document.getElementById("test");
+
+    // h1_tag.method();
+	// h1_tag.attribute
+
+    console.log(h1_tag);
+
+    // var-name.style.property = "value";
+
+    h1_tag.style.color = "red";
+    h1_tag.style.height = "300px";
+    h1_tag.style.width = "300px";
+    h1_tag.style.background = "lightblue";
+    h1_tag.style.fontSize = "55px";
+    h1_tag.style.paddingTop = "20px";
+
+    
+	// h2_tag.style.color ="green"
+
+	// varName.classList.add('className');
+
+    //css join karva mate classList.add('name ') use
+	h2_tag.classList.add('xyz');
+
+
+
+</script>
+
+    
+</body>
+</html>

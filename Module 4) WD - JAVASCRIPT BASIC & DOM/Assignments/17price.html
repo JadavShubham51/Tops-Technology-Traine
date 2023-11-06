@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Price: <input type="text" name="" id="p" value="200">
+
+    <select name="" id="q" onchange="totalPrice()">
+        <option value="" disabled>--- Select Quantity ---</option>
+        <option value="1" >1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+
+    </select>
+
+    <h3 id="res"></h3>
+
+    <script>
+
+
+    price_tag =document.getElementById('p');
+    quantity_tag =document.getElementById('q');
+    TotalP= document.getElementById('res');
+
+        console.log(price_tag)
+        console.log(price_tag.value)
+        console.log(quantity_tag)
+        console.log(quantity_tag.value)
+
+        console.log(price_tag.value  *  quantity_tag.value)
+
+      function totalPrice()
+      {
+        TotalP.innerHTML = price_tag.value  *  quantity_tag.value;
+      }
+
+    </script>
+    
+</body>
+</html>

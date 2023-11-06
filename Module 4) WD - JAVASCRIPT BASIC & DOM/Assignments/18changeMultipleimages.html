@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        button
+        {
+            position: absolute;
+            bottom: 50%;
+            right:10%;
+            border: none;
+            background: transparent;
+            font-size: 30px;
+            color: #fff;
+            box-shadow:  0 0 30px #000 inset;
+            padding: 14px 20px;
+            font-weight: bold;
+
+            border-radius: 10px;
+        }
+        .main 
+        {
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* .test 
+        {
+            animation: scaleMe 1s;
+        }
+
+        @keyframes scaleMe
+        {
+            from{transform: scale(1);}
+            to {transform: scale(1.5);}
+        } */
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <img src="/TASK/imges/car1.jpg" alt="" height="450px" width="100%" id="img1">
+
+   
+    <button onclick="changeImages()">></button>
+
+</div>
+
+
+    <script>
+        function changeImages()
+        {
+
+           im1 =  document.getElementById('img1');
+
+           console.log(im1.src)
+
+
+        //    if( im1.src== "http://127.0.0.1:5500/images/i1.jpg"  )
+        //    {
+        //     im1.src ="images/i2.jpg";
+        //    }
+           if( im1.src.match("/TASK/imges/car1.jpg")  )
+           {
+            im1.src ="/TASK/imges/car2.jpg";
+            // im1.classList.add('test')
+           
+           }
+
+           else if(im1.src.match("/TASK/imges/car2.jpg") )
+           {
+            im1.src ="/TASK/imges/car3.jpg";
+           
+           }
+           else if(im1.src.match("/TASK/imges/car3.jpg") )
+           {
+            im1.src ="/TASK/imges/car4.jpg";
+            
+           }
+
+           else
+           {
+            im1.src ="/TASK/imges/car1.jpg";
+           }
+
+
+            // setTimeout("changeImages()",1700)
+
+        //setTimeout(changeImages,1000)
+
+          
+          
+            
+        }
+
+        changeImages()
+    </script>
+    
+</body>
+</html>

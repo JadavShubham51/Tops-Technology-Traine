@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // x=4,y=56;
+        //     if(x>=y)
+        //     {
+        //         document.write("if")
+        //     }
+        //     else if(y<x)
+        //     {
+        //         document.write("else if")
+        //     }
+
+        //     else
+        //     {
+        //         document.write("else")
+        //     }
+
+        x = 66
+        if(x>100)
+        {
+            document.write("invalid marks")
+        }
+        else if(x>=90)
+        {
+            document.write("A grade")
+        }
+        else if(x>=80)
+        {
+            document.write("B grade")
+        }
+        else if(x>=70)
+        {
+            document.write("c grade")
+        }
+        else{
+            document.write("faild")
+        }
+
+        marks = 100
+        // if (marks > 50) {
+        //     msg = "Grt"
+        // }
+        
+        // if (marks > 50) {
+        //     msg = "Grt"
+        // } else {
+        //     msg = "try again"
+        // }
+
+
+        let msg = "";
+        if (marks >=0 && marks <=100 ) {
+            if (marks > 50) {
+                if (marks >=50 && marks <60 ) {
+                    msg = "Passclass";
+                }else if (marks >=60 && marks <70 ) {
+                    msg = "Second class";
+                }else if (marks >=70 && marks <80 ) {
+                    msg = "dist class";
+                }else if (marks >=80 && marks <90 ) {
+                    msg = "dist+ class";
+                }else{
+                    msg = "bou thayu";
+                }
+             } else {
+                 msg = "try again...";
+                }
+            }else{
+                
+                msg = "Invalid Marks";
+        }
+        console.log(msg);
+
+        
+    
+    </script>
+    
+</body>
+</html>

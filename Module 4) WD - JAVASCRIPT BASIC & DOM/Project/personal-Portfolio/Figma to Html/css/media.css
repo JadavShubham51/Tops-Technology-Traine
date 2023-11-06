@@ -1,0 +1,109 @@
+@media screen and (max-width: 900px) {
+    .Header{
+        position: relative;
+        
+    }
+    .h_list{
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        visibility: hidden;
+        transition: .5s;
+        opacity: 0;
+    }
+    .h_list ul{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .h_list ul li{
+        /* width: 100%; */
+        padding: 5px 5px;
+        background-color: grey;
+    }
+    
+    .h_button{
+        display: none;
+    }
+    .h_togglt{
+        display: block;
+    }
+    .h_togglt a{
+        font-size: 20px;
+        position: absolute;
+        top: 5px;
+    }
+    .title_1 .btn1{
+        display: none;
+    }
+    .title_1 .btn1{
+        border-radius: 100px;
+    }
+    .title h1{
+        font-size: 40px;
+    }
+    .search{
+       flex-direction: column;
+       width: 100%;
+    }
+    .search input{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .search .btn3{
+        /* display: block; */
+        width: 80%;
+        margin: 0 auto;
+    }
+    .tag{
+        flex-wrap: wrap;
+        flex-basis: auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .Timeline{
+        display: block;
+    }
+    .Timeline .survey .survey1{
+        width: 100%;
+        border-left:0px;
+        text-align: center;
+        border-bottom:15px solid #794CFF;
+    }
+    .Timeline .survey .survey2{
+        width: 100%;
+        text-align: center;
+    }
+    .work1{
+        display: block;
+        width: 100%;
+        padding: 0px;
+    }
+    .work1 .w_team{
+        width: 100%;
+        padding: 0px;
+        margin-top: 50px;
+    }
+    .Time{
+        display: block;
+    }
+    .Time .t1_title{
+        text-align: center;
+    }
+    .customer .customer1{
+        display: block;
+        
+    }
+    .customerT{
+        display: block;
+        border-radius: 0px;
+    }
+    .customer{
+        padding: 10px;
+    }
+    .footer1{
+        flex-wrap: wrap;
+    }
+  }

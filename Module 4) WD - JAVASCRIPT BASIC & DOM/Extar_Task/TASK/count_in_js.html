@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body
+        {
+            height: 100vh;
+            background: linear-gradient(lightcoral,blue);
+        }
+        .main{
+            height: 250px;
+            width: 250px;
+            background-color: white;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 8px;
+            box-shadow: 0 20px 25px rgba(0, 0, 0,0.45);
+            display: grid;
+            place-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+
+    <script>
+        function countTo()
+        {
+            let from =0;
+            let to = 500;
+            let step = to > from ? 1 : -1; 
+            let interval =5; //speed
+
+            if(from == to)
+            {
+                document.querySelector('.main').textContent = from;
+                return;
+            }
+
+            let counter = setInterval(function()
+            {
+                from += step;
+                document.querySelector('.main').textContent = from;
+
+                if(from == to)
+                    {
+                        clearInterval(counter);
+                    }
+            },interval);
+        }
+        countTo()
+    </script>
+</body>
+</html>
+
+
+
+

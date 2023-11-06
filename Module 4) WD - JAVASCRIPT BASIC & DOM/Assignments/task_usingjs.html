@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function countStringCharacters(inputString) {
+            let uppercaseCount = 0;
+            let lowercaseCount = 0;
+            let spaceCount = 0;
+            let symbolCount = 0;
+            let numberCount = 0;
+
+            for (let i = 0; i < inputString.length; i++) {
+                const char = inputString.charAt(i);
+
+                if (/[A-Z]/.test(char)) {
+                    uppercaseCount++;
+                } else if (/[a-z]/.test(char)) {
+                    lowercaseCount++;
+                } else if (/\s/.test(char)) {
+                    spaceCount++;
+                } else if (/\W/.test(char)) {
+                    symbolCount++;
+                } else if (/[0-9]/.test(char)) {
+                    numberCount++;
+                }
+            }
+
+            return {
+                uppercase: uppercaseCount,
+                lowercase: lowercaseCount,
+                spaces: spaceCount,
+                symbols: symbolCount,
+                numbers: numberCount,
+            };
+        }
+
+        const inputString = "Hello World! 123";
+
+        const counts = countStringCharacters(inputString);
+
+        console.log("Uppercase letters: " + counts.uppercase);
+        console.log("Lowercase letters: " + counts.lowercase);
+        console.log("Spaces: " + counts.spaces);
+        console.log("Symbols: " + counts.symbols);
+        console.log("Numbers: " + counts.numbers);
+    </script>
+</body>
+
+</html>

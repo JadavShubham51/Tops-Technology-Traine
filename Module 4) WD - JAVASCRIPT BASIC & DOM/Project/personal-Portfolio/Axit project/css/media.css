@@ -1,0 +1,322 @@
+@media screen and (max-width:1200px) {
+    .nav .logo img{
+        width: 70px;
+    }
+    .header .nav nav a{
+        margin: 0 15px;
+    }
+    .header .header-layer .header-left img{
+        width: 100px;
+    }
+    .header .header-layer .header-left h4{
+        font-size: 20px;
+    }
+    .header .header-layer .header-left p{
+        font-size: 13px;
+        margin: 10px 0;
+    }
+    .left-br{
+        display: none;
+    }
+    .header .header-left .download-button{
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+    .header .header-right form{   
+        width: 250px; 
+    }
+    .header .header-right form h1{
+        font-size: 14px;
+    }
+    .container .social-media{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .social-media .social-right .icons a{
+        font-size: 20px;
+        margin: 0 15px;
+    }
+    .container .feature-2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }   
+    .container .feature-2 img{
+        width: 100%;
+    }
+    .container .feature-2 p{
+        text-align: left;
+    }
+    .container .ft-title-1-icon ,.container .ft-title-2-icon{
+        margin-right: 10px;
+    }
+    .container .feature-3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .container .feature-3 img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .nav .logo img{
+        width: 50px;
+    }
+    .header .nav nav a{
+        margin: 0 10px;
+        font-size: 15px;
+    }
+    .header .header-layer .header-left img{
+        width: 80px;
+    }
+    .header .header-layer .header-left h4{
+        font-size: 17px;
+    }
+    .header .header-layer .header-left p{
+        font-size: 12px;
+        margin: 10px 0;
+    }
+    .left-br{
+        display: none;
+    }
+    .header .header-left .download-button{
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .header .header-right form{   
+        width: 200px; 
+    }
+    .header .header-right form h1{
+        font-size: 12px;
+    }
+    .header .header-right form input{
+        margin: 10px auto;
+    }
+    .header .header-right form a{
+        padding: 7px 0;
+        font-size: 14px;
+    }
+    .container .social-media{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .social-media .social-right .icons a{
+        font-size: 18px;
+        margin: 0 10px;
+    }
+    .social-media .social-right .icons{
+        padding-left: 7%;
+    }
+    .container .tabs-area .tabs .tab{
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+    }
+    .container .packeges .packege .packege-header h2{
+        padding: 8px 0;
+        font-size: 14px;
+    }
+    .container .packeges .packege .packege-header h1{
+        font-size: 35px;
+    }
+    .container .packeges .packege .packege-header h1 sub{
+        font-size: 20;
+    }
+    .container .packeges .packege .packege-header span{
+        padding: 5px 0;
+        font-size: 14px;
+    }
+    .container .packeges .packege .packege-header h3{
+        padding: 7px 0;
+        font-size: 12px;
+    }
+    .container .packeges .packege .pricing-body p{
+        margin: 0;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+    .container .customers-area .customers .customer > p{
+        text-align: center;
+    }
+    .container .customers-area .customers .customer > p span{
+        display: none;
+    }
+}
+
+@media screen and (max-width :768px){
+    .header .nav{
+        display: block;
+        /* background-color: crimson; */
+        text-align:right;
+        position: relative;
+    }
+    .header .nav nav{
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50px;
+        transition: .5s;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .header .nav nav a{
+        color: gray;
+        display: block;
+        text-align: left;
+        padding: 10px 0 10px 7%;
+    }
+    .container .nav-toggle{
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 20px;
+        top: 0;
+        left: 20px;
+        text-align: center;
+        line-height: 60px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .container .nav-toggle:hover{
+        color: #ff8b38;
+    }
+    .container .close-nav{
+        display: none;
+    }
+    .container .header header{
+        height: 90vh;
+        
+    }
+    .container .header header .header-layer{
+        grid-template-columns: 100%;
+        padding: 50px 7%;
+        overflow-y: scroll;
+        text-align: center;
+    }
+    .container .header-left .header-line{
+        margin:0 auto;
+    }
+    .container .header-left .download-button{
+        margin-bottom: 20px;
+    }
+    .container .header-right form{
+        margin-bottom: 50px;
+    }
+    .container .social-media{
+        display: block;
+        text-align: center;
+    }
+    .container .social-media .social-left{
+        margin-bottom: 20px;
+    }
+    .container .social-media .social-right{
+        padding: 0;
+    }
+    .container .social-media .social-right .icons a{
+       margin: 0 5px;
+       padding: 0;
+    }
+    .container .tabs-area{
+        grid-template-columns: 100%;
+    }
+    .container .tabs-area .tabs{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .container .tabs-area .tabs .tab{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 10px;
+    }
+    .container .feature-2{
+       display: grid;
+       grid-template-columns: 100%; 
+    }
+    .container .feature-2 .feature-txt{
+        padding: 0;
+    }
+    .container .feature-2 .feature-txt p{
+        text-align: justify;
+    }
+    .container .feature-3{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .container .feature-3 .feature-3-left{
+        text-align: justify;
+    }
+    .container .awesome-text h1{
+        font-size: 18px;
+    }
+    .container .suggests{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .container .suggests .suggest{
+        margin: 30px 0;
+    }
+    .container .pricing .pricing-text h1{
+        font-size: 20px;
+    }
+    .container .pricing .packeges{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .container .pricing .packeges .packege{
+        width: 100%;
+        margin: 30px auto;
+    }
+    .container .customers-area .customer-text h1{
+        font-size: 20px;
+    }
+    .container .customers-area .customers{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .container .customers-area .customers .customer{
+        width: 100%;
+        margin: 30px 0;
+    }
+    .container .stylish .stylish-layer{
+        padding: 50px 7%;
+    }
+    .container .stylish .stylish-layer h1{
+        font-size: 20px;
+    }
+    .container .stylish .stylish-layer button{
+        padding: 5px 10px;
+    }
+    .container .contact .contact-text h1{
+        font-size: 20px;
+    }
+    .container .contact .from-details{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .container .contact .from-details .details{
+        margin-bottom: 20px;
+    }
+    .container .contact .from-msg textarea{
+        padding: 0;
+        padding-left: 15px;
+        font-size: 16px;
+        height: 100px;
+        margin-top: 30px;
+    }
+    .container .footer .footer-icons a{
+        font-size: 18px;
+        margin: 0 15px;
+    }
+
+}
+
+
+
+
+
+
+

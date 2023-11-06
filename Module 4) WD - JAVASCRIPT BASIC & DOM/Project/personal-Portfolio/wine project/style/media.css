@@ -1,0 +1,310 @@
+@media only screen and (max-width:767px){
+    .container{
+        width: 450px;
+    }
+    .canvas_open{
+        right: 19px;
+        top: 28px;
+    }
+    .canvas_open a{
+        width: 30px;
+        height: 30px;
+        line-height: 26px;
+        font-size: 24px;
+    }
+    .header_account {
+        display: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .offcanvas_menu{
+        display: block;
+    }
+    .offcanvas_two .canvas_open{
+        top: 18px;
+    }
+    .header_account>ul>li {
+        margin-right: 0;
+    }
+    .header_account>ul>li:hover>a {
+        color: #bda87f;
+    }
+    .header_account > ul > li > a{
+        line-height: 22px;
+        color: #000;
+    }
+    .dropdown_currency, .dropdown_language, .dropdown_links {
+        left: -30px;
+    }
+    .dropdown_language {
+        left: -10px;
+    }
+    .header_right_info {
+        display: none;
+        text-align: center;
+        margin-left: 0;
+    }
+    .search_widget{
+        left: -68px;
+        right: auto;
+    }
+    .search_widget form {
+        width: 225px;
+    }
+    .search_widget form input {
+        padding: 8px 40px 8px 15px;
+        height: 38px;
+    }
+    .mini_cart_wrapper:hover .mini_cart{
+        padding: 10px 11px 20px;
+    }
+    .mini_cart{
+        display: none;
+        transition: unset;
+        padding: 10px 11px 20px;
+        min-width: 253px;
+        right: -69px;
+        max-height: inherit;
+        visibility: inherit;
+    }
+    .cart_img{
+        width: 70px;
+    }
+    .cart_info a{
+        font-size: 13px;
+    }
+    .cart_total span{
+        font-size: 13px;
+    }
+    .header_transparent{
+        position: inherit;
+    }
+    .header_transparent .header-container{
+        background: #1c1d22;
+    }
+    .header-container{
+        padding: 25px 0;
+    }
+    .sticky-header.sticky{
+        position: inherit;
+        box-shadow: inherit;
+        animation-name: inherit;
+        padding: 0;
+        background: inherit;
+        opacity: inherit;
+    }
+    .sticky-header.sticky .logo a img{
+        max-width: 100px;
+    }
+    .logo{
+        display: inline-block;
+    }
+    .logo a img{
+        max-width: 110px;
+    }
+    .main_menu{
+        display: none;
+    }
+    .super-deal-section{
+        background-position: top center;
+        min-height: 300px;
+    }
+    .testi #quote-carousel blockquote {
+        width: 100%;
+    }
+    .blog-content {
+        padding: 15px;
+        min-height: 170px;
+        background-color: #000;
+        margin-bottom: 10px;
+    }
+    .blog-img .bubble-top::before {
+        border-color: transparent transparent #000 transparent;
+    }
+    .blog-img .bubble-bottom::before {
+        border-color: #000 transparent transparent transparent;
+    }
+    .newsletter-bg form {
+        text-align: center;
+    }
+}
+@media only screen and (max-width:479px){
+    .container{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .offcanvas_menu{
+        display: block;
+    }
+    .canvas_open{
+        right: 25px;
+        top: 26px;
+    }
+    .canvas_open a{
+        width: 33px;
+        height: 33px;
+        line-height: 30px;
+        font-size: 26px;
+    }
+    .header_account{
+        display: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .header_account>ul>li {
+        margin-right: 0;
+    }
+    .header_account>ul>li:hover>a {
+        color: #bda87f;
+    }
+    .header_account > ul > li > a{
+        line-height: 22px;
+        color: #000;
+    }
+    .dropdown_currency, .dropdown_language, .dropdown_links {
+        left: -30px;
+    }
+    .dropdown_language {
+        left: -10px;
+    }
+    .header_right_info {
+        display: none;
+        text-align: center;
+        margin-left: 0;
+    }
+    .search_widget{
+        left: -68px;
+        right: auto;
+    }
+    .search_widget form {
+        width: 225px;
+    }
+    .search_widget form input {
+        padding: 8px 40px 8px 15px;
+        height: 38px;
+    }
+    .mini_cart_wrapper:hover .mini_cart{
+        padding: 10px 11px 20px;
+    }
+    .mini_cart{
+        display: none;
+        transition: unset;
+        padding: 10px 11px 20px;
+        min-width: 253px;
+        right: -69px;
+        max-height: inherit;
+        visibility: inherit;
+    }
+    .cart_img{
+        width: 70px;
+    }
+    .cart_info a{
+        font-size: 13px;
+    }
+    .cart_total span{
+        font-size: 13px;
+    }
+    .header_transparent{
+        position: inherit;
+    }
+    .header_transparent .header-container{
+        background: #1c1d22;
+    }
+    .sticky-header.sticky{
+        position: inherit;
+        box-shadow: inherit;
+        animation-name: inherit;
+        padding: 0;
+        background: inherit;
+        opacity: inherit;
+    }
+    .sticky-header.sticky .logo a img{
+        max-width: 100%;
+    }
+    .main_menu{
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .header_account{
+        margin-right: 25px;
+    }
+    .main_menu nav>ul>li>a{
+        padding: 10px 15px;
+    }
+    .menu_two nav>ul>li>a {
+        padding: 10px 4px;
+        font-size: 13px;
+    }
+    .menu_two nav>ul>li>a i {
+        margin-left: 1px;
+    }
+    .header_top_right .header_right_info>ul>li{
+        margin-right: 10px;
+    }
+    .header_top_right .header_account>ul>li{
+        margin-right: 8px;
+        padding-right: 8px;
+      }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1600px){
+    .menu_two nav>ul>li>a {
+        padding: 10px 14px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .super-deal-section{
+        min-height: 350px;
+    }
+    .super-deal{
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    .super-deal h1{
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .blog-content {
+        padding: 15px;
+        min-height: 170px;
+    }
+    .blog-title h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .post-date {
+        margin-bottom: 5px;
+    }
+    .post-content {
+        margin-bottom: 10px;
+    }
+    .newsletter-bg {
+        background-position: top;
+    }
+    .newsletter .btn-default {
+        margin-top: 8px;
+    }
+    .footer {
+        padding: 30px 0 0;
+    }
+}
+@media only screen and (max-width: 786px){
+    .tabSix .tab-content{
+        margin-top: 24px;
+    }
+}
+@media only screen and (max-width: 1199px) {
+    .testi #quote-carousel blockquote {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .blog-content {
+        min-height: 220px;
+    }
+}

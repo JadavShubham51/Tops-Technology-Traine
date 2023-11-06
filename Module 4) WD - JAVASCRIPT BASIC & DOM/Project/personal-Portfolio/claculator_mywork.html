@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calci</title>
+    <style>
+        .main
+        {
+            height: 500px;
+            width: 500px;
+            background-color: lightcoral;
+            margin: 150px auto;
+            border-radius: 5%;
+            overflow: hidden;
+        }
+        .main .r1
+        {
+            height: 100px;
+            width: 100%;
+            background-color: black;
+        }
+
+        input[type=text]
+        {
+            height: 97px;
+            width: 99%;
+            background-color: black;
+            color: white;
+            font-size: 50px;
+            text-align: right;
+        }
+
+
+
+        .main .r2
+        {
+            height: 400px;
+            width: 100%;
+            /* background-color: red; */
+            display: flex;
+        }
+        .c1
+        {
+            height: inherit;
+            width: 25%;
+            /* border: 2px solid burlywood; */
+            /* background-color:burlywood; */
+        }
+        .c1 .c1-1
+        {
+            height: 76px;
+            width: 100%;
+            border: 2px solid black;
+        }
+        button
+        {
+            height: 80px;
+            width: 100%;
+            background-color: lightpink;
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .c4
+        {
+            height: inherit;
+            width: 25%;
+        }
+
+        .eqlue
+        {
+            height: 320px;
+            width: 100%;
+        }
+        .eqlue
+        {
+            text-align: center;
+            line-height: 300px;
+            font-size: 60px;
+            font-weight: bold;
+        }
+        button:hover
+        {
+            background: gray;
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="r1">
+            <input type="text" id="input1">
+        </div>
+        <div class="r2">
+            <div class="c1">
+                <button onclick=" insertop('+')">
+                    +
+                </button>
+                <button  value="7" onclick=" insertNUm(7)">
+                    7
+                </button>
+                <button onclick=" insertNUm(4)">
+                    4
+                </button>
+                <button onclick=" insertNUm(1)">
+                    1
+                </button>
+                <button onclick=" insertNUm(0)">
+                    0
+                </button>
+            </div>
+            <div class="c1">
+                <button onclick=" insertop('-')">
+                    -
+                </button>
+                <button onclick=" insertNUm(8)">
+                    8
+                </button>
+                <button onclick=" insertNUm(5)">
+                    5
+                </button>
+                <button onclick=" insertNUm(2)">
+                    2
+                </button>
+                <button value="." onclick=" insertDec()">
+                    .
+                </button>
+            </div>
+            <div class="c1">
+                <button onclick=" insertop('*')">
+                     ×
+                </button>
+                <button onclick=" insertNUm(9)">
+                    9
+                </button>
+                <button onclick=" insertNUm(6)">
+                    6
+                </button>
+                <button onclick=" insertNUm(3)">
+                    3
+                </button>
+                <button id="clearw" onclick=" cli()">
+                    C
+                </button>
+            </div>
+            <div class="c4">
+                <button onclick=" insertop('/')">
+                    ÷
+                </button>
+                <button class="eqlue" onclick="equalTo()">
+                    =
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        input1 = document.getElementById('input1');
+
+        var exp = '', number,allowSR, decimal, equal, operator = true;
+
+        // function cli()
+        // {
+        //     input1.value = "";
+        // }
+        function cli()
+        {
+            exp = "";
+            input1.value = exp;
+            decimal= false;
+        }
+
+        function insertNUm(num)
+        {
+            if (equal) 
+            {
+                exp = num;
+                input1.value = exp;
+                number = true;
+                equal = false;
+            }
+            else{
+                exp =  input1.value + num;
+                input1.value = exp;
+                number = true;
+            }
+            if (operator) decimal = false;
+        }
+
+        function insertop(op) 
+        {
+            input1.value = exp + op;
+            operator= true;
+            equal = false;
+            number =false;
+            allowSR = false
+        }
+
+        function insertDec()
+        {
+            if (number && !decimal)
+            {
+                input1.value = exp + '.';
+                decimal = true;
+                operator = false; 
+            }
+        }
+
+        function equalTo()
+        {
+            if (exp)
+            {
+                exp =  eval(exp);
+                input1.value = exp;
+                equal = true;
+                decimal =false;
+                number =false;
+                allowSR = true;
+            }
+        }
+
+     </script>
+
+
+
+
+</body>
+</html>

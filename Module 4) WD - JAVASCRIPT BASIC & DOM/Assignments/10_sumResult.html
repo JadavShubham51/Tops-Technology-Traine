@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" name="val1" id="val1">
+    <input type="text" name="val2" id="val2">
+    <input type="button" value="Button" name="btn" id="btn">
+
+    <div id="disp"></div>
+    <script>
+        
+        document.getElementById("btn").addEventListener("click",function () {
+            // console.log("called");
+            let value1 = document.getElementById("val1").value
+            let value2 = document.getElementById("val2").value
+            console.log("value1 : ",value1);
+            console.log("value2 ",value2);
+            let Sum  = parseFloat(value1) + parseInt(value2)
+            console.log("Sum  : ",Sum  );
+            // document.write("test")
+            // document.write(Sum)
+            document.getElementById("disp").innerHTML = "<b>"+Sum+"</b>"
+            // document.getElementById("disp").innerText = "<b>"+Sum+"</b>"
+        })
+
+        //float and int property use that
+
+    </script>
+</body>
+</html>

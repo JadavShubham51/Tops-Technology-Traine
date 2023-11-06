@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css1_in_js</title>
+    <style>
+        .x
+        {
+            height: 200px;
+			width: 450px;
+			background:linear-gradient(red,blue);
+			color: #fff;
+			text-align: center;
+			line-height: 200px;
+			font-size: 34px;
+			font-family:cursive;
+            transition: 1.2s;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 id="h" onclick="removecss()">Hello</h2>
+
+    <button onclick="applyCss()">Add css</button>
+    <button onclick="removecss()">remove css</button>
+    <button onclick="AddRemoveCss()">Add/Remove css</button>
+
+    <script>
+        h_tag = document.getElementById('h');
+
+        function applyCss()
+        {
+            h_tag.classList.add('x');
+        }
+        
+        function removecss()
+        {
+            h_tag.classList.remove('x');
+        }
+
+        function AddRemoveCss()
+        {
+            h_tag.classList.toggle('x');
+        }
+
+
+
+    </script>
+
+    
+</body>
+</html>

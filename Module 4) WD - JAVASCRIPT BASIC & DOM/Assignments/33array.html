@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Array: collection of different type of values -->
+
+    <!-- x=1,y=3;
+    x=2,4; 
+
+    var varName = [3,4,"5",6.5,true];
+
+    Array Indexex/ Keys / Positions starts with ZERO.
+
+    varName[0] = 3
+    varName[1] = 4
+    varName[2] = 5
+    varName[3] = 6.5
+    varName[4] = true
+
+    sizeof an array  = total no of values stored
+
+
+-->
+<script>
+
+var x = [3,"5",6.5,true];
+
+    document.write(x +"<br>")
+    document.write(typeof(x));
+
+    document.write("<br>" + x[3] +"<br>")
+
+    document.write("<br>" + "size of an array = " +  x.length);
+
+
+    // for(key=0;key<4;key++)
+    // {
+    //     document.write(key);//
+    // }
+
+    for(key=0;key<x.length;key++)
+    {
+        document.write("<br>")
+        document.write(x[key]);// 0 1 2 3
+        document.write("<br>")
+    }
+
+
+
+
+</script>
+
+    
+</body>
+</html>

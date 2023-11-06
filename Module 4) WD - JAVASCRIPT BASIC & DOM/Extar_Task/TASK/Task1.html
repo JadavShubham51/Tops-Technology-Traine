@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        .div1
+        {
+            font-size: 24px;
+        }
+
+        .main1
+        {
+            position: relative;
+            height: 450px;
+        }
+        .main
+        {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            position: absolute;
+            top: 400px;
+            /* position: relative; */
+            
+            margin-top: 20px;
+            transition: 1.5s;
+            opacity: 0;
+        }
+        .first
+        {
+            height: 400px;
+            width: 400px;
+            background-color: lightcoral;
+            /* position: absolute;
+            top: 0;
+            left: 0; */
+        }
+        .second
+        {
+            height: 400px;
+            width: 400px;
+            background-color: lightcoral;
+            /* position: absolute;
+            top: 0px;
+            left: 420px; */
+        }
+        .third
+        {
+            height: 400px;
+            width: 400px;
+            background-color: lightcoral;
+            /* position: absolute;
+            top: 0px;
+            left: 840px; */
+        }
+        .four
+        {
+            height: 400px;
+            width: 400px;
+            background-color: lightcoral;
+            /* position: absolute;
+            top: 0;
+            right: 10px; */
+        }
+
+
+        .main3
+        {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .five1
+        {
+            height: 400px;
+            width: 400px;
+            background-color: lawngreen;
+            transform: translateX(-110%) rotate(0deg)  scale(0.3);
+            /* transform: rotate(360deg); */
+            transition: 1.5s;
+            opacity: 0;
+        }
+        .five2
+        {
+            height: 400px;
+            width: 400px;
+            background-color: lawngreen;
+            transform: translateX(-210%) rotate(0deg) scale(0.3);
+            /* transform: rotate(360deg); */
+            transition: 1.5s;
+            opacity: 0;
+            
+        }
+        .five3
+        {
+            height: 400px;
+            width: 400px;
+            background-color: lawngreen;
+            transform: translateX(210%) rotate(360deg) scale(0.3);
+            /* transform: rotate(360deg); */
+            transition: 1.5s;
+            opacity: 0;
+        }
+        .five4
+        {
+            height: 400px;
+            width: 400px;
+            background-color: lawngreen;
+            transform: translateX(110%) rotate(360deg) scale(0.3);
+            /* transform: rotate(360deg); */
+            transition: 1.5s;
+            opacity: 0;
+        }
+
+
+
+    </style>
+</head>
+
+<body onscroll=" divup()">
+
+    <h1>Heading1</h1>
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et veritatis mollitia repudiandae expedita vel
+        veniam tempora odit, tenetur officia ut reprehenderit exercitationem, autem illum maiores rem doloribus earum
+        natus.
+
+    </div>
+    <div class="main1">
+    <div class="main" id="main">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="four"></div>
+    </div>
+    </div>
+
+    <div class="main2">
+        <div class="main3">
+            <div class="five1" id="five1"></div>
+            <div class="five2" id="five2"></div>
+            <div class="five3" id="five3"></div>
+            <div class="five4" id="five4"></div>
+        </div>
+    </div>
+   
+    <script>
+        
+        maindiv = document.getElementById("main");
+        five1 = document.getElementById("five1");
+        five2 = document.getElementById("five2");
+        five3 = document.getElementById("five3");
+        five4 = document.getElementById("five4");
+
+        function divup()
+        {
+            if(document.documentElement.scrollTop > 600)
+            {
+                main.style.top = 0;
+                main.style.opacity = 1;
+                five1.style.transform = "translateX(0%) rotate(360deg)  scale(1)";
+                // five1.style.transform = "rotate(0deg)";
+                five1.style.opacity =1;
+
+                five2.style.transform = "translateX(0%) rotate(360deg)  scale(1)";
+                // five2.style.transform = "rotate(0deg)";
+                five2.style.opacity =1;
+
+                five3.style.transform = "translateX(0%) rotate(0deg) scale(1)";
+                // five3.style.transform = "rotate(0deg)";
+                five3.style.opacity =1;
+
+                five4.style.transform = "translateX(0%) rotate(0deg) scale(1)";
+                // five4.style.transform = "rotate(0deg)";
+                five4.style.opacity =1;
+            }
+           
+        }
+       
+        
+        
+    </script>
+</body>
+
+</html>

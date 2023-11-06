@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form onsubmit="return  ValidateForm()">
+    Name: <input type="text" id="nm" >
+            <span id="nmErr"></span>
+    <br><br>
+
+    Password: <input type="text" id="pwd">
+    <span id="pwdErr"></span>
+    
+    <br><br>
+    Confirm Password: <input type="text" id="cpwd"> <br><br>
+
+    Mobile: <input type="text" id="mob">
+    <span id="mbErr"></span>
+     <br><br>
+
+     <!-- <input type="submit" onclick=" return  ValidateForm()"> <br><br> -->
+
+     <input type="submit" > <br><br>
+</form>
+
+
+
+     <script>
+
+        name1 = document.getElementById('nm');
+        nmSpan = document.getElementById('nmErr');
+
+        Password = document.getElementById('pwd');
+        pwdSpan = document.getElementById('pwdErr');
+
+        Cpassword = document.getElementById('cpwd');
+     
+        mobile = document.getElementById('mob');
+        mbSpan = document.getElementById('mbErr');
+
+        function ValidateForm()
+        {
+           if(name1.value == "")
+           {
+            //alert("name is required..!");
+            nmSpan.innerHTML =" *Name is required..!";
+            nmSpan.style.color ="red";
+            return false;
+           }
+
+           else
+           {
+            nmSpan.innerHTML ="";
+           }
+
+           if(Password.value == "")
+           {
+            //alert("name is required..!");
+            pwdSpan.innerHTML =" *Password is required..!";
+            pwdSpan.style.color ="red"
+            return false;
+           }
+
+          
+
+           else
+           {
+            pwdSpan.innerHTML ="";
+           }
+
+           if(Password.value != Cpassword.value)
+           {
+            alert("passwords do not match...!");
+            return false;
+           }
+
+           if(mobile.value == "")
+           {
+            //alert("name is required..!");
+            mbSpan.innerHTML =" *Mobile is required..!";
+            mbSpan.style.color ="red"
+            return false;
+           }
+
+           else
+           {
+            mbSpan.innerHTML ="";
+           }
+        }
+
+     </script>
+    
+</body>
+</html>
