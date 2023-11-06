@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover_effect_color_fill</title>
+    <style>
+
+        .main
+        {
+            height: 50px;
+            width: 100px;
+            background: lightskyblue;
+
+            border-radius: 30px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 50px;
+
+            margin: 100px auto;
+
+            position: relative;
+            overflow: hidden;
+            z-index: 0;
+            
+            box-shadow: 0 0 14px red inset,3px 3px 7px blueviolet inset,-3px -3px 7px yellowgreen inset;
+
+        }
+        .effect
+        {
+            height: 100px;
+            width: 200px;
+            background: linear-gradient(red,blue);
+
+            position: absolute;
+            top: 0;
+            left: -200%;
+            transition: 1s;
+            z-index: -1;
+        }
+        .main:hover .effect
+        {
+            left: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        Hover Me
+        <div class="effect"></div>
+    </div>
+</body>
+</html>

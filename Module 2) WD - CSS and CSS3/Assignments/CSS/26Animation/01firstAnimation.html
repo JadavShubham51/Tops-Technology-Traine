@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anim {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: rtt;
+            animation-duration: 5s;
+            /* animation-delay: 2s; */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-iteration-count: 2; */
+            /* animation-iteration-count: infinite; */
+            /* animation-fill-mode: backwards; */
+            animation-fill-mode: forwards;
+            /* animation-delay: 2s; */
+        }
+        .box::after{
+            /* width: 500px;
+            content: "-";
+            animation-name: rtt;
+            animation-duration: 5s;
+            display: block; */
+            /* animation-delay: 2s; */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-iteration-count: 2; */
+            /* animation-iteration-count: infinite; */
+            /* animation-fill-mode: backwards; */
+            /* animation-fill-mode: forwards; */
+        }
+
+        /* @keyframes rtt{
+            to{ transform: rotate(0deg); }
+            from{     transform: rotate(360deg); }
+        } */
+        @keyframes rtt {
+            0% {
+                /* transform: rotate(0deg); */
+                color: orangered;
+                /* border-radius: 10%; */
+                /* background-color: teal; */
+                border-bottom: 2px solid grey;
+                transform: scale(0.5);
+            }
+            
+            50% {
+                transform: scale(1);
+                color: green;
+                /* border-radius: 20%; */
+                border-bottom: 2px solid grey;
+                /* background-color: purple; */
+                /* border: 2px solid orangered; */
+                /* transform: rotate(20deg); */
+            }
+            
+            100% {
+                color: blue;
+                transform: scale(2);
+                /* border: 5px solid purple; */
+                /* background-color: grey; */
+            }
+        }
+        .box{
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            background-color: green;
+        }
+        .animation-state{
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+<button onclick="btnClick()">Click</button>
+<script>
+    function btnClick(params) {
+        document.getElementById("box").classList.add("animation-state")
+    }
+    
+</script>    
+<div class="box anim" id="box">
+
+    </div>
+    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nihil dolorum incidunt inventore rerum
+        expedita labore? Ipsam cupiditate dolorum provident est eveniet delectus excepturi, voluptate reiciendis illum
+        esse quibusdam officiis.</p>
+
+
+</body>
+
+</html>

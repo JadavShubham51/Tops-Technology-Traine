@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-entiss</title>
+    <style>
+        .hadphone
+        {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px auto;
+            position: relative;
+        }
+        .hadphone::after
+        {
+            content: "\01F3A7";
+            position: absolute;
+            font-size: 30px;
+        }
+        .hadphone::before
+        {
+            content: "";
+            height: 0px;
+            width: 0px;
+            transform: scale(0);
+            position: absolute;
+            background: rgb(42, 152, 221,0.9);
+            transition: .1s;
+        }
+        .hadphone:hover::before
+        {
+            height: 100px;
+            width: 100px;
+            transform: scale(1);
+        }
+       
+        
+
+    </style>
+</head>
+<body>
+    <div class="hadphone"></div>
+</body>
+</html>

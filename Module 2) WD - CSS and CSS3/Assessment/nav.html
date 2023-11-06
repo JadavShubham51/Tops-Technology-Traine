@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav
+
+    </title>
+    <style>
+        ul{
+            background: coral;
+            text-align: center;
+
+        }
+        li{
+
+            display: inline;
+            margin-right: 20px;
+            position: relative;
+            /* text-align: center; */
+           
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+        li::before
+        {
+            content: "";
+            height: 5px;
+            width: 0px;
+            background: blue;
+            position: absolute;
+            top: 100%;
+            left: 0%;
+
+            transition: 0.4s;
+
+        }
+        li:hover::before
+        {
+            width: 40px;
+            
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">Serives</a></li>
+        <li><a href="">contect</a></li>
+    </ul>
+</body>
+</html>

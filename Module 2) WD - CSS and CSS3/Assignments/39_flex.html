@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        *{box-sizing: border-box;}
+        .row
+        {
+            height: 300px;
+            /* width: 300px; */
+            background: gray;
+            /* display: flex; means to inlne contect  */
+            display: flex;
+            
+        }
+        .col
+        {
+            height: 300px;
+            width: 25%;
+            background: url(https://img.traveltriangle.com/blog/wp-content/uploads/2019/11/Treks-In-The-World-cover_18th-Nov.jpg);
+			background-size: 100% 100%;
+            border: 2px solid;
+            /* float: left; */
+            /* relative means to pernet ko */
+            position: relative;
+        }
+        .col span
+        {
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <img src="https://www.kosha.co/journal/wp-content/uploads/2022/05/Trekking-Tips-1.jpg" height="100%" width="100%">
+        
+            <span>col 1</span>
+        </div>
+
+        <div class="col">col2</div>
+
+        <div class="col">
+            <img src="https://moxtain.s3.ap-south-1.amazonaws.com/blogs/12BestMonsoonTreksInIndia/Monsoon-Trek.jpg" height="100%" width="100%">
+			<span>col 3</span>
+        </div>
+        <div class="col">col4</div>
+    </div>
+</body>
+</html>

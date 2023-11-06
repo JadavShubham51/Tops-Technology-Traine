@@ -1,0 +1,207 @@
+dis<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        *{margin: 0;}
+
+        .products
+        {
+            display: flex;
+            flex-wrap: wrap;
+            border: 3px solid red;
+            padding-left: 90px;
+            
+        }
+        .prd-card
+        {
+            height: 400px;
+            width: 250px;
+            box-shadow: 0 0 20px gray;
+            position: relative;
+            /* flex-grow: 1; */
+            
+            margin: 15px;
+        }
+        .prd-card span
+        {
+            height: 300px;
+            width: inherit;
+            background: lightblue;
+        }
+        .prd-card .prd-view
+        {
+            height: 50px;
+            width: inherit;
+            background: #000;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+            font-size: 20px;
+            position: absolute;
+            top: 0;
+            transition: .9s;
+            opacity: 0;
+            color: #fff;
+        }
+        .prd-card .prd-info
+        {
+            height: 100px;
+            width: inherit;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .prd-card:hover .prd-view
+        {
+            top: 240px;
+            opacity: 1;
+        }
+        .prd-view:hover{
+            background-color: #fff;
+            color: #000;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="products">
+
+        <div class="prd-card">
+            <span>New</span>
+            <div class="prd-imge">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                    alt="" height="100%" width="100%">
+            </div>
+            <div class="prd-view">
+                Quick view
+            </div>
+            <div class="prd-info">
+                <p>Formal Blue shirt</p>
+                <p>$45.99 $69.71</p>
+                <p><button>Add To Cart</button></p>
+            </div>
+        </div>
+
+        <div class="prd-card">
+            <span>New</span>
+            <div class="prd-imge">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                    alt="" height="100%" width="100%">
+            </div>
+            <div class="prd-view">
+                Quick view
+            </div>
+            <div class="prd-info">
+                <p>Formal Blue shirt</p>
+                <p>$45.99 $69.71</p>
+                <p><button>Add To Cart</button></p>
+            </div>
+        </div>
+
+        <div class="prd-card">
+            <span>New</span>
+            <div class="prd-imge">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                    alt="" height="100%" width="100%">
+            </div>
+            <div class="prd-view">
+                Quick view
+            </div>
+            <div class="prd-info">
+                <p>Formal Blue shirt</p>
+                <p>$45.99 $69.71</p>
+                <p><button>Add To Cart</button></p>
+            </div>
+        </div>
+
+        <div class="prd-card">
+            <span>New</span>
+            <div class="prd-imge">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                    alt="" height="100%" width="100%">
+            </div>
+            <div class="prd-view">
+                Quick view
+            </div>
+            <div class="prd-info">
+                <p>Formal Blue shirt</p>
+                <p>$45.99 $69.71</p>
+                <p><button>Add To Cart</button></p>
+            </div>
+        </div>
+
+        <div class="prd-card">
+            <span>New</span>
+            <div class="prd-imge">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                    alt="" height="100%" width="100%">
+            </div>
+            <div class="prd-view">
+                Quick view
+            </div>
+            <div class="prd-info">
+                <p>Formal Blue shirt</p>
+                <p>$45.99 $69.71</p>
+                <p><button>Add To Cart</button></p>
+            </div>
+        </div>
+
+        <div class="prd-card">
+            <span>New</span>
+            <div class="prd-imge">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                    alt="" height="100%" width="100%">
+            </div>
+            <div class="prd-view">
+                Quick view
+            </div>
+            <div class="prd-info">
+                <p>Formal Blue shirt</p>
+                <p>$45.99 $69.71</p>
+                <p><button>Add To Cart</button></p>
+            </div>
+        </div>
+
+        <div class="prd-card">
+            <span>New</span>
+            <div class="prd-imge">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                    alt="" height="100%" width="100%">
+            </div>
+            <div class="prd-view">
+                Quick view
+            </div>
+            <div class="prd-info">
+                <p>Formal Blue shirt</p>
+                <p>$45.99 $69.71</p>
+                <p><button>Add To Cart</button></p>
+            </div>
+        </div>
+
+        <div class="prd-card">
+            <span>New</span>
+            <div class="prd-imge">
+                <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg"
+                    alt="" height="100%" width="100%">
+            </div>
+            <div class="prd-view">
+                Quick view
+            </div>
+            <div class="prd-info">
+                <p>Formal Blue shirt</p>
+                <p>$45.99 $69.71</p>
+                <p><button>Add To Cart</button></p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .main
+        {
+            height: 1200px;
+            
+            /* background-color: black; */
+            position: relative;
+        }
+        .first
+        {
+            height: 400px;
+            width: 100%;
+            /* background-color: aqua; */
+            border: 10px solid lightcoral;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 0;
+        }
+        .second
+        {
+            height: 400px;
+            width: 100%;
+            /* background-color: navajowhite; */
+            border: 10px solid gray;
+            position: absolute;
+            top: 200px;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-grow: inherit;
+            z-index: 1;
+        }
+        .c1
+        {
+            height: 400px;
+            width: 400px;
+            background-color: red;
+            margin-right: 60px;
+        }
+        .c2
+        {
+            height: 400px;
+            width: 400px;
+            background-color: blue;
+            
+        }
+        .c3
+        {
+            height: 400px;
+            width: 400px;
+            background-color: rgb(132, 121, 61);
+            margin-left: 60px;
+        }
+        .third
+        {
+            height: 400px;
+            width: 100%;
+            /* background-color: navy; */
+            border: 10px solid black;
+            position: absolute;
+            top: 400px;
+            z-index: -1;
+        }
+
+
+
+        @media (max-width: 1500px) {
+
+            .c1
+            {
+                height: 250px;
+                width: 250px;
+            }
+            .c2
+            {
+                height: 250px;
+                width: 250px;
+                
+            }
+            .c3
+            {
+                height: 250px;
+                width: 250px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+
+            .c1
+            {
+                height: 180px;
+                width: 180px;
+            }
+            .c2
+            {
+                height: 180px;
+                width: 180px;
+                
+            }
+            .c3
+            {
+                height: 180px;
+                width: 180px;
+            }
+        }
+
+        @media (max-width: 900px) {
+         
+            .c1
+            {
+                height: 150px;
+                width: 150px;
+            }
+            .c2
+            {
+                height: 150px;
+                width: 150px;
+                
+            }
+            .c3
+            {
+                height: 150px;
+                width: 150px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .third
+            {
+                top: 800px;
+            }
+            .second{
+                top: 400px;
+                display: inline;
+               
+
+            }
+            .c1
+            {
+                height: 120px;
+                width: 120px;
+                margin: 5px auto;
+            }
+            .c2
+            {
+                height: 120px;
+                width: 120px;
+                margin: 5px auto;
+            }
+            .c3
+            {
+                height: 120px;
+                width: 120px;
+                margin: 5px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first"></div>
+        <div class="second">
+            <div class="c1"></div>
+            <div class="c2"></div>
+            <div class="c3"></div>
+        </div>
+        <div class="third"></div>
+    </div>
+
+
+</body>
+</html>

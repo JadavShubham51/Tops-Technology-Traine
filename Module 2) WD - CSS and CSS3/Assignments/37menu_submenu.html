@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu_submenu</title>
+    <style>
+        *{margin: 0;padding: 0}
+        .nav
+        {
+            /* height: 100px;
+            background: lightblue;
+            text-align: center; */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu
+        {
+            display: inline;
+            list-style-type: none;
+            margin-right: 20px;
+            background-color: lightcoral;
+            position: relative;
+        }
+        a
+        {
+            text-decoration: none;
+            font-family: cursive;
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .dropdown
+        {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0px;
+        }
+        .dropdown li {list-style: none;}
+
+        .menu:hover .dropdown
+        {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+        <ul>
+            <li class="menu"><a href="">Home</a>
+                <ul class="dropdown">
+                    <li><a href="">home 1</a></li>
+                    <li><a href="">home 2</a></li>
+                    <li><a href="">home 3</a></li>
+                </ul></li>
+            
+            <li class="menu"><a href="">About</a></li>
+    
+    
+            <li class="menu"><a href="">Services</a>
+    
+                <ul class="dropdown">
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Service</a></li>
+                </ul>
+    
+    
+    
+            </li>
+    
+    
+    
+    
+            <li class="menu"><a href="">Contact</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

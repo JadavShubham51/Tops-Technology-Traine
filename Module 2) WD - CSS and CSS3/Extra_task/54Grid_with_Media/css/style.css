@@ -1,0 +1,273 @@
+
+*{box-sizing: border-box;margin: 0;padding: 0;}
+.banner
+{
+    /* height: 550px; */
+    /* width: 100%; */
+    background:url(../images/main-2-bg-min.jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.banner .bannerInfo
+{
+    /* height: 50px; */
+    width: 80%;
+    /* background:olivedrab ; */
+    display: grid;
+    grid-template-columns: 2fr 5fr 3fr;
+
+    margin: auto;
+
+}
+.banner .bannerInfo .logo
+{
+    /* height: 50px;  */
+    /* border: 2px solid saddlebrown;   */
+    padding: 15px 0;
+   
+}
+.banner .bannerInfo .navi
+{
+    /* height: 50px; */
+    /* border: 2px solid saddlebrown;   */
+    padding: 20px 0;
+ 
+}
+
+.banner .bannerInfo .navi .menu-items
+{
+    display: inline;
+    margin-right: 20px;  
+    position: relative;
+    /* background: lightsalmon; */
+    padding: 9px 10px;
+ 
+}
+.banner .bannerInfo .navi .menu-items a
+{
+    text-decoration: none; 
+    color: #000;
+    font-weight: bold;
+ 
+}
+
+.banner .bannerInfo .navi .submenu 
+{
+    display: none;
+    position: absolute;
+    top:100%;
+    left:0;
+    border-top: 4px solid lightseagreen;
+    /* background: green; */
+    width: 200%;
+}
+
+.banner .bannerInfo .navi .menu-items:hover .submenu 
+{
+    display: block;
+}
+
+
+.banner .bannerInfo .list
+{
+    /* height: 50px; */
+    /* border: 2px solid saddlebrown;  */
+    padding: 20px 0; 
+    
+}
+
+.banner .bannerInfo .list a
+{
+    text-decoration: none;
+    margin-right: 20px; 
+    
+}
+.banner .bannerInfo .list a:first-child 
+{
+    border: 3px solid burlywood;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+
+.banner .info
+{
+    /* height: 400px; */
+    /* background: greenyellow; */
+    padding: 50px 0 50px 200px;
+    color:#fff;
+}
+
+.banner .info .text
+{
+    height: 250px;
+    width: 450px;
+    line-height: 29px;
+    /* background: lightblue; */
+}
+
+.rent
+{
+    height: auto;
+    width: 100%;
+    background-color: aqua;
+    padding: 50px 0 50px 370px;
+}
+.main
+{
+    height: auto;
+    width: 75%;
+    background-color: rebeccapurple;
+    /* border: 2px solid black; */
+    
+}
+.main .heading
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-menu
+{
+    height: auto;
+    border: 2px solid black;
+    display: flex; 
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-rows: 3fr 3fr 3fr;
+    grid-template-columns: 3.3fr 3.3fr 3.3fr; */
+    /* margin: 20px; */
+}
+.card-menu .card
+{
+    height: 400px;
+    /* width: 32%; */
+    /* width: 95%; */
+    background-color: lightcoral;
+    /* border: 1px solid lightgreen; */
+    border-radius: 5px;
+    margin: 7px;
+}
+
+
+.card-menu .card .card-image
+{
+    height: 300px;
+    width: 300px;
+    /* background: url(../images/rent1-unsplash-min-min-760x510.jpg); */
+    background-size: cover;
+    /* border: 2px solid blueviolet; */
+    position: relative;
+    border-radius: 5px;
+}
+.card-image img{
+    object-fit: cover;
+}
+.card-menu .card .card-image .buy
+{
+    height: 25px;
+    width: 50px;
+    background-color: greenyellow;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+} 
+.card-menu .card .card-image .Rent
+{
+    height: 25px;
+    width: 50px;
+    background-color: greenyellow;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    top: 5px;
+    left: 60px;
+    
+}
+.eye
+{
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    top: 5px;
+    right: 65px;
+    display: none;
+}
+.card:hover .eye
+{
+    display: block;
+}
+.card-menu .card .card-image .home
+{
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    top: 5px;
+    right: 35px;
+}
+.card-menu .card .card-image .heart
+{
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.card-menu .card .card-text
+{
+    height: 100px;
+    width: 100%;
+    /* border: 2px solid blueviolet; */
+}
+.card-menu .card .card-text p 
+{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.card-menu .card .card-text a
+{
+    font-size: 20px;
+    color: black;
+    padding-left: 10px;    
+}
+.card-menu .card .card-text span
+{
+    font-size: 20px;
+    color: black;
+    padding-left: 100px;
+}
+
+.viewmore
+{
+    height: 50px;
+    width: 150px;
+    background-color: violet;
+    border: 2px solid black;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 0 0 5px white;
+}

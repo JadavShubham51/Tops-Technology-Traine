@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task9</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            /* height: 100vh; */
+            background-color: rgb(58, 56, 56);
+            /* padding-top: 100px;
+            padding-left: 100px; */
+            position: relative;
+        }
+        .first
+        {
+            height: 700px;
+            width:40%;
+            /* background-color: green; */
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 100px;
+            left: 300px;
+            z-index: 1;
+        }
+        .first .one
+        {
+            height: 350px;
+            width: 100%;
+            /* background-color: red; */
+            /* border: 1px solid bisque; */
+            display: flex;
+            padding-bottom: 410px;
+        }
+        .first .one .one1
+        {
+            height: inherit;
+            width: 50%;
+            background-color: white;
+            /* border: 1px solid lawngreen; */
+            text-align: center;
+            padding-top: 80px;
+            /* margin-bottom: 10px; */
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-right: 10px;
+        }
+        .one1 a{
+            font-size: 100px;
+            color: rgb(121, 224, 236);
+            
+        }
+        .first .one .one2
+        {
+            height: inherit;
+            width: 50%;
+            background-color: white;
+            /* border: 1px solid lawngreen; */
+            text-align: center;
+            padding-top: 80px;
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-right: 30px;
+        }
+        .one2 a{
+            font-size: 100px;
+            color: rgb(121, 224, 236);
+            
+        }
+        .first .two
+        {
+            height: 350px;
+            width: 100%;
+            /* background-color: red; */
+            /* border: 1px solid bisque; */
+            display: flex;
+            
+        }
+        .first .two .two1
+        {
+            height: 288px;
+            width: 50%;
+            background-color: white;
+            /* border: 1px solid lawngreen; */
+            text-align: center;
+            padding-top: 80px;
+            
+            margin-left: 31px;
+            margin-right: 20px;
+        }
+        .two1 a{
+            font-size: 100px;
+            color: rgb(121, 224, 236);
+            
+        }
+        .first .two .two2
+        {
+            height: 288px;
+            width: 50%;
+            background-color: white;
+            /* border: 1px solid lawngreen; */
+            text-align: center;
+            padding-top: 80px;
+            
+            margin-left: 10px;
+            margin-right: 31px;
+            
+        }
+        .two2 a{
+            font-size: 100px;
+            color: rgb(121, 224, 236);
+            
+        }
+        .second
+        {
+            height: 800px;
+            width: 40%;
+            background-color: rgb(121, 224, 236);
+            /* border: 1px solid red; */
+            position: absolute;
+            top: 60px;
+            right: 300px;
+            z-index: 0;
+            padding-top: 150px;
+            padding-left: 100px;
+        }
+        .second h1
+        {
+            font-size: 70px;
+        }
+        .second input[type=text]
+        {
+            background-color: white;
+            border: none;
+            width: 70%;
+            height: 50px;
+            color: black;
+            padding-top: 10px;
+        }
+        .second input[type=email]
+        {
+            background-color: white;
+            border: none;
+            width: 70%;
+            height: 50px;
+            color: black;
+            padding-top: 10px;
+        }
+        .second input[type=message]
+        {
+            background-color: white;
+            border: none;
+           
+            width: 70%;
+            height: 100px;
+            color: black;
+            padding-top: 60px;
+        }
+        .second input[type=submit]
+        {
+            background-color: rgb(121, 224, 236);
+            color: black;
+            border: 2px solid black;
+            width: 20%;
+            height: 50px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+        <div class="first">
+            <div class="one">
+                <div class="one1">
+                    <a href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                    <p>Dark Main Office</p>
+                    snjuivni park a1 
+                    socity near
+                    bharcuh
+                </div>
+                <div class="one2">
+                    <a href=""><i class="fa fa-phone" aria-hidden="true"></i></a>
+                    <p>Phone number</p>
+                    234-5235-5400
+                    adbjk 346723(tell phone)
+                </div>
+            </div>
+            <div class="two">
+                <div class="two1">
+                    <a href=""><i class="fa fa-mobile" aria-hidden="true"></i></a>
+                    <p>pul</p>
+                    1-2445-332-2353
+                </div>
+                <div class="two2">
+                    <a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                    <p>EMAIL</p>
+
+                    sdhuaishd@gmail.com
+                </div>
+                
+            </div>
+        </div>
+        <div class="second">
+            <form action="" align="center">
+                <h1>Contact Us</h1><br>
+                <input type="text" placeholder="Full name"><br><br><br>
+                
+                <input type="email" placeholder="email"><br><br><br>
+            
+                <input type="Message" placeholder="Type Your Message"><br><br>
+            <br>
+                <input type="submit" value="submit" style="text-align: center;">
+            </form>
+        </div>
+</body>
+</html>

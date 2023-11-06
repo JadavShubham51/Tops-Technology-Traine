@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clip-path-triangle</title>
+    <style>
+
+        .triangle
+        {
+            height: 200px;
+            width: 200px;
+            background: lightseagreen;
+
+            clip-path: polygon(50% 0%,100% 100%,0% 100%);
+        }
+        .petagonal
+        {
+            height: 200px;
+            width: 200px;
+            background: blueviolet;
+
+            clip-path: polygon(50% 0%,100% 40%,80% 100%,20% 100%,0% 40%);
+        }
+        .hexagonal
+        {
+            height: 200px;
+            width: 200px;
+            background: darkorange;
+
+            clip-path: polygon(40% 0%,80% 30%,80% 70%,40% 100%,0% 70%,0% 30%);
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div class="triangle"></div><br>
+
+    <div class="petagonal"></div><br>
+
+    <div class="hexagonal"></div>
+
+    
+</body>
+</html>

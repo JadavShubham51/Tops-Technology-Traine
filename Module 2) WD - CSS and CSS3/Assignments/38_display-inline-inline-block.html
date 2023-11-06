@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline and inline-block</title>
+    <style>
+        /* .main * means all tag ne mali jase */
+        .main1 *
+        {
+            border: 2px solid blue;
+            padding: 35px;
+            display: block;
+            margin-bottom: 90px;
+        }
+
+        .main2 *
+        {
+            border: 2px solid blue;
+            padding: 25px;
+            display: inline;
+            /* margin-bottom: 30px; */
+        }
+
+        .main3 *
+        {
+            margin-top: 90px;
+            border: 2px solid gray;
+            padding: 35px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <div> DIV
+            <ul> UL
+                <li> LI
+                    <span>SPAN</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main2">
+        <div> DIV
+            <ul> UL
+                <li> LI
+                    <span>SPAN</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main3">
+        <div> DIV
+            <ul> UL
+                <li> LI
+                    <span>SPAN</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

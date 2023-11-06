@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{ box-sizing: border-box;}
+        .x
+        {
+            height: 200px;
+            width: 200px;
+            margin: 200px auto;
+            /* border: 10px solid gray; */
+            /* border-top: 10px solid red; */
+            border-radius: 50%;
+            background: transparent;
+            padding: 15px;
+            position: relative;
+        }
+        .y
+        {
+            height: 150px;
+            width: 150px;
+            /* border: 10px solid gray; */
+            border-top: 10px solid yellow;
+            border-radius: 50%;
+            background: transparent;
+            padding: 15px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            animation: preloader1 1s infinite;
+        }
+        .z
+        {
+            height: 100px;
+            width: 100px;
+            /* border: 10px solid gray; */
+            border-top: 10px solid blue;
+            border-radius: 50%;
+            background: transparent;
+            padding: 15px;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            animation: preloader 1s infinite;
+        }
+        .a
+        {
+            height: 50px;
+            width: 50px;
+            /* border: 10px solid gray; */
+            border-top: 10px solid gold;
+            border-radius: 50%;
+            background: transparent;
+            position: absolute;
+            top: 65px;
+            left:65px;
+            animation: preloader1 1s infinite;
+        }
+
+        @keyframes preloader
+        {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+
+        @keyframes preloader1
+        {
+            from{transform: rotate(360deg);}
+            to{transform: rotate(0deg);}
+        }
+    </style>
+
+        
+
+
+    <div class="x">
+        <div class="y"> </div> 
+            <div class="z"> </div>
+                <div class="a"></div>
+        
+        
+    </div>
+    
+</body>
+</html>

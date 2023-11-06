@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task3</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main
+        {
+            height: 50px;
+            width: 100%;
+            /* background-color: aqua; */
+            padding-top: 20px;
+            display: flex;
+            
+        }
+        .main .nav1
+        {
+            height: 50px;
+            width: 80%;
+            background-color: grey;
+            border: 1px solid red;
+            position: relative;
+        
+        }
+        ul
+        {
+            /* display: inline; */
+            text-align: center;
+            line-height: 50px;
+            /* background-color: red; */
+        }
+        li{
+            display: inline;
+            margin-right: 20px;
+            
+            
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+           /* background-color: red; */
+
+        }
+        a:hover{
+            background-color: red;
+        }
+        .main .nav2
+        {
+            height: 50px;
+            width: 20%;
+            background-color: red;
+            /* border: 1px solid red; */
+            position: absolute;
+            right: 0px;
+            font-size: 40px;
+            text-align: left;
+            line-height: 50px;
+        }
+        .main .nav2:hover .new
+        {
+            opacity: 1;
+        }
+        .new
+        {
+            margin-top: 30px;
+            height: 50px;
+            width: 100%;
+            /* background-color: black; */
+            /* border: 1px solid red; */
+            display: flex;
+            text-align: left;
+            opacity: 0;
+        }
+        .new .search
+        {
+            height: inherit;
+            width: 100%;
+            /* background-color: blue; */
+            /* border: 1px solid black; */
+            line-height: 0px;
+        }
+        .new .icons
+        {
+            height: 50px;
+            width: 15%;
+            background-color: red;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 50px;
+        }
+        .new.icons .b
+        {
+            font-size: 50px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav1">        
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">PROFILE</a></li>
+                <li><a href="" >CONTACT</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">MAPS</a></li>
+            </ul>
+        </div>
+        <div class="nav2">
+            <a href="" class="s">
+                <i class="fa fa-search" id="sh"></i>
+
+                <div class="new">
+                    <div class="search">
+                        <input type="search" style="height: 50px; width: 200px;color: black;">
+                    </div>
+                    <div class="icons">
+                        <a href="" class="b"><i class="fa fa-search" id="sh"></i></a>
+                    </div>
+                </div> 
+            </a>
+        </div>
+        
+    </div>
+   
+    
+</body>
+</html>

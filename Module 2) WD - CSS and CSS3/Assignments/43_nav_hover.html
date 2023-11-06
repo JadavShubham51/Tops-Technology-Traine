@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav_hover.html</title>
+    <style>
+        li{
+            list-style: none;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        li::after
+        {
+            content: "";
+
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 5px;
+            width: 0px;
+            background-color: coral;
+            transition: .4s;
+        }
+        li:hover::after{
+            width: 45px;
+        }
+    </style>
+</head>
+<body>
+
+    <li><a href="">Home</a></li>
+</body>
+</html>

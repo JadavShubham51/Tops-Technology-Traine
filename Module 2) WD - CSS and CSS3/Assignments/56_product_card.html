@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{box-sizing: border-box;}
+        .products
+        {
+            /* height: 350px; */
+            width: 100%;
+            border: 2px solid;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 35px;
+            gap: 10px;
+           
+        }
+
+        .products .x
+        {
+            height: 250px;
+            flex-basis: 250px;
+            /* flex-grow: 1; */
+            border: 2px solid blue;
+            font-size: 1.5vw;
+            /* overflow: auto; */
+
+        }
+        .bgImg
+        {
+            background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg);
+            background-size: 100% 100%;
+            background-repeat:no-repeat ;
+            /* background-position: center; */
+        }
+        .x img 
+        {
+            box-shadow: 0 0 10px #000;
+            /* object-fit: contain; */
+            /* object-fit: cover; */
+            object-fit: scale-down;
+        }
+        @media(max-width:460px)
+        {
+            .products .x{font-size: 16px;}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="products">
+
+        <div class="x bgImg">
+            background
+        </div>
+
+         <div class="x">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam libero quasi nemo odit fugiat vel enim iste placeat ipsum rem veritatis cumque adipisci nam impedit consequuntur delectus, odio molestias voluptas?</div>
+
+
+
+          <div class="x">
+          
+            <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m7.jpg" alt="" height="100%" width="100%">
+        
+        </div>
+           <div class="x">d1</div>
+
+            <div class="x">d1</div>
+             <div class="x">d1</div>
+              <div class="x">d1</div>
+               <div class="x">d1</div>
+
+    </div>
+    
+</body>
+</html>

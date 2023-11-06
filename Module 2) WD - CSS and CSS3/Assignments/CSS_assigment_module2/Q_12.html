@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo_elements</title>
+    <style>
+        h1::first-letter
+        {
+            background: blueviolet;
+            color: #fff;
+        }
+        p::first-line
+        {
+            background: black;
+            color: white;
+        }
+
+        /* :: selection is use to selcet value and use chanegs */
+        ::selection
+        {
+            background: black;
+            color: #fff;
+
+        }
+
+        /* before means phela any time show  */
+        h2::before
+        {
+            /*			content: "HI ";*/
+
+			content: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg);
+        }
+        /* after means pachi show to chages */
+        h2::after
+		{
+			content: " Shubham";
+		}
+        /* ::content means \and number to pic small in use that */
+        h1::before
+		{
+			content: "\26C4";
+		}
+    </style>
+</head>
+<body>
+    
+    
+    <h2>hello</h2>
+    <h1>sdfsd &nbsp;&nbsp;&nbsp;&nbsp; sdfd</h1>
+    <!-- word-spacing measn word space and letter-spacing menas letter space -->
+    <h1 style="word-spacing:34px;letter-spacing: 3px;">asdas asd</h1>
+    
+    
+    
+    <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    
+    
+        <h1> Heading 1</h1>
+        <h1> Heading 1</h1>
+        <h1> Heading 1</h1>
+        <h1> Heading 1</h1>
+
+
+</body>
+</html>

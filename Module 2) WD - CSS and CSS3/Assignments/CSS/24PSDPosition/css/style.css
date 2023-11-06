@@ -1,0 +1,192 @@
+/* Common CSS for all PSD START */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans";
+}
+
+.container {
+    width: 1254px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+div[class*="col"] {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.justi-spc-btw {
+    justify-content: space-between;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+
+/* Common CSS for all PSD END */
+
+
+.txt-cap {
+    text-transform: capitalize;
+}
+
+.txt-up {
+    text-transform: uppercase;
+}
+
+.text-light {
+    color: #ffffff;
+}
+
+.logo img {
+    vertical-align: middle;
+}
+
+.posi-ab {
+    position: absolute;
+}
+
+.posi-rel {
+    position: relative;
+}
+
+.t-0 {
+    top: 0;
+}
+.b-0 {
+    bottom: 0;
+}
+.r-0 {
+    right: 0;
+}
+.l-0 {
+    left: 0;
+}
+.my-2{
+    margin: 1.5em 0;
+}
+.my-5{
+    margin: 2.5em 0;
+}
+.py-5{
+    padding: 2.5em 0;
+}
+.mx-2{
+    margin: 0 1.5em;
+}
+
+
+
+/* main-header menu START */
+.navbar li a {
+    text-decoration: none;
+    color: #484f5b;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: right;
+    text-transform: capitalize;
+    padding: 30px;
+    font-size: 21px;
+}
+
+.main-menu {
+    line-height: 120px;
+}
+
+/* main-header menu END */
+
+.sec-title {
+    font-size: 75px;
+    letter-spacing: 1px;
+    color: #484f5b;
+    font-weight: 700;
+
+}
+.banner-bottom-right{
+    position: absolute;
+    right: 0;
+    bottom: -8em;
+}
+.sec1_floral{
+    bottom: 5px;
+}
+.banner-left-dots {
+    top: 9em;
+    left: 7em;
+}
+.banner-left-floral3{
+    bottom: 3em;
+    left: 8em;
+}
+.banner-txt {
+    padding:0 20px;
+    margin: 70px 0;
+}
+p {
+    font-size: 21px;
+    line-height: 33px;
+    color: #484f5b;
+    font-weight: 400;   
+}
+.sec1_brush{
+    bottom: -8em;
+}
+
+.sec5_brush{
+    top: -50px;
+    left: -50px;
+    z-index: -1;
+}
+.sec5_brush1{
+    bottom: -30px;
+    right: -30px;
+    z-index: -1;
+}
+.bg3{
+    padding: 20px;
+}
+.balance-body-mind .sec1_Floral3{
+    left: -30px;
+}
+.balance-body-mind-sec1_floral{
+    z-index: -1;
+    top: -25px;
+    right: 5px;
+}
+.balance-body-mind-sec1_dot{
+    top: -25px;
+    right: 5px;
+}

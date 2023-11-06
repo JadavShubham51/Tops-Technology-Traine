@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media print {
+            body {
+                font-size: 10pt;
+                color: green;
+                font-weight: bolder;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Media Query</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, qui. Culpa libero vero aspernatur maiores modi,
+        sint earum laboriosam eaque non ducimus. Hic temporibus libero corporis doloremque commodi facere aliquid!</p>
+    <pre>
+        @media only screen and (min-width: 320px) and (max-width: 480px) and (resolution: 150dpi) {
+            body {
+              line-height: 1.4;
+            }
+          }
+    </pre>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Breakpoint</th>
+                <th>Class infix</th>
+                <th>Dimensions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>X-Small</td>
+                <td><em>None</em></td>
+                <td>&lt;576px</td>
+            </tr>
+            <tr>
+                <td>Small</td>
+                <td><code>sm</code></td>
+                <td>≥576px</td>
+            </tr>
+            <tr>
+                <td>Medium</td>
+                <td><code>md</code></td>
+                <td>≥768px</td>
+            </tr>
+            <tr>
+                <td>Large</td>
+                <td><code>lg</code></td>
+                <td>≥992px</td>
+            </tr>
+            <tr>
+                <td>Extra large</td>
+                <td><code>xl</code></td>
+                <td>≥1200px</td>
+            </tr>
+            <tr>
+                <td>Extra extra large</td>
+                <td><code>xxl</code></td>
+                <td>≥1400px</td>
+            </tr>
+        </tbody>
+    </table>
+    <pre class="chroma"><code class="language-scss" data-lang="scss"><span class="c1">// X-Small devices (portrait phones, less than 576px)
+    </span><span class="c1">// No media query for `xs` since this is the default in Bootstrap
+    </span><span class="c1"></span>
+    <span class="c1">// Small devices (landscape phones, 576px and up)
+    </span><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">min-width</span><span class="o">:</span> <span class="mi">576</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+    
+    <span class="c1">// Medium devices (tablets, 768px and up)
+    </span><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">min-width</span><span class="o">:</span> <span class="mi">768</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+    
+    <span class="c1">// Large devices (desktops, 992px and up)
+    </span><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">min-width</span><span class="o">:</span> <span class="mi">992</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+    
+    <span class="c1">// X-Large devices (large desktops, 1200px and up)
+    </span><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">min-width</span><span class="o">:</span> <span class="mi">1200</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+    
+    <span class="c1">// XX-Large devices (larger desktops, 1400px and up)
+    </span><span class="c1"></span><span class="k">@media</span> <span class="p">(</span><span class="na">min-width</span><span class="o">:</span> <span class="mi">1400</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span> <span class="nc">...</span> <span class="p">}</span>
+    </code></pre>
+
+
+    <table class="table">
+        <thead>
+          <tr>
+            <td class="border-dark"></td>
+            <th scope="col">
+              Extra small<br>
+              <span class="fw-normal">&lt;576px</span>
+            </th>
+            <th scope="col">
+              Small<br>
+              <span class="fw-normal">≥576px</span>
+            </th>
+            <th scope="col">
+              Medium<br>
+              <span class="fw-normal">≥768px</span>
+            </th>
+            <th scope="col">
+              Large<br>
+              <span class="fw-normal">≥992px</span>
+            </th>
+            <th scope="col">
+              X-Large<br>
+              <span class="fw-normal">≥1200px</span>
+            </th>
+            <th scope="col">
+              XX-Large<br>
+              <span class="fw-normal">≥1400px</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="fw-normal"><code>.container</code></th>
+            <td class="text-muted">100%</td>
+            <td>540px</td>
+            <td>720px</td>
+            <td>960px</td>
+            <td>1140px</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <th scope="row" class="fw-normal"><code>.container-sm</code></th>
+            <td class="text-muted">100%</td>
+            <td>540px</td>
+            <td>720px</td>
+            <td>960px</td>
+            <td>1140px</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <th scope="row" class="fw-normal"><code>.container-md</code></th>
+            <td class="text-muted">100%</td>
+            <td class="text-muted">100%</td>
+            <td>720px</td>
+            <td>960px</td>
+            <td>1140px</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <th scope="row" class="fw-normal"><code>.container-lg</code></th>
+            <td class="text-muted">100%</td>
+            <td class="text-muted">100%</td>
+            <td class="text-muted">100%</td>
+            <td>960px</td>
+            <td>1140px</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <th scope="row" class="fw-normal"><code>.container-xl</code></th>
+            <td class="text-muted">100%</td>
+            <td class="text-muted">100%</td>
+            <td class="text-muted">100%</td>
+            <td class="text-muted">100%</td>
+            <td>1140px</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <th scope="row" class="fw-normal"><code>.container-xxl</code></th>
+            <td class="text-muted">100%</td>
+            <td class="text-muted">100%</td>
+            <td class="text-muted">100%</td>
+            <td class="text-muted">100%</td>
+            <td class="text-muted">100%</td>
+            <td>1320px</td>
+          </tr>
+          <tr>
+            <th scope="row" class="fw-normal"><code>.container-fluid</code></th>
+            <td class="text-muted">100%</td>
+            <td class="text-muted">100%</td>
+            <td class="text-muted">100%</td>
+            <td class="text-muted">100%</td>
+            <td class="text-muted">100%</td>
+            <td class="text-muted">100%</td>
+          </tr>
+        </tbody>
+      </table>
+</body>
+
+</html>

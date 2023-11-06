@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forreground_background-images</title>
+    <style>
+        .foreGround,.backGround
+        {
+            height: 200px;
+            width: 400px;
+            background: lightblue;
+            margin: 50px auto;
+        }
+        .backGround
+        {
+            background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg);
+            background-size: 100% 100%;
+            /* background-position: top; */
+            /* background-repeat: no-repeat; */
+        }
+
+        .foreGround
+        {
+            position: relative;
+        }
+        .foreGround p{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="foreGround">
+
+        <img src="https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg" height="100%" width="100%">
+        <p>TEST</p>
+    </div>
+
+    <div class="backGround">
+        TEST
+    </div>
+</body>
+</html>

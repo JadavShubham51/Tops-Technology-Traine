@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav mautiple hover</title>
+    <style>
+        ul{
+            background: lightblue;
+        }
+        li{
+            display: inline;
+            margin-right: 20px;
+            position: relative;
+            
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+        li::after
+        {
+            content: "";
+            height: 5px;
+            /* width: 0; */
+            background: #000;
+
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transform: scaleX(0);
+            transition: .5s;
+            margin-top: 5px;
+            
+        }
+        li:hover::after
+        {
+            transform: scaleX(1);
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Serivers</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</body>
+</html>

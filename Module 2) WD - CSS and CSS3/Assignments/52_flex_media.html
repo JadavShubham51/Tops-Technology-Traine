@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{box-sizing: border-box;}
+        body 
+        {
+         background: linear-gradient(red,blue);
+            /* height: 100vh; */
+            background-attachment: fixed;
+       
+        }
+        .header
+        {
+            /* height: auto; */
+            background: gray;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .header .logo 
+        {
+            height: 100px;
+            width: 20%;
+            /* background-color: lightblue; */
+            border: 2px solid;
+        }
+
+        .header .links 
+        {
+            height: 100px;
+            width: 80%;
+            /* background-color: lightcoral; */
+            border: 2px solid;
+        }
+
+        .header .links  a 
+        {
+            text-decoration: none;
+            color: #000;
+            font-size: 2vw;
+            font-weight: bold;
+            font-family: cursive;
+            margin-right: 20px;
+        }
+
+
+        @media (max-width:1160px)
+        {
+            .header .logo {width:50%;}
+            .header .links {width:50%;}
+            /* .header .links  a {font-size: 20px;} */
+        }
+
+        @media (max-width:960px)
+        {
+            .header .logo {width:10%;}
+            .header .links {width:90%;}
+        }
+
+        @media (max-width:760px)
+        {
+            .header .logo {width:30%;}
+            .header .links {width:70%;}
+        }
+
+        @media (max-width:460px)
+        {
+            .header .logo {width:100%;}
+            .header .links {width:100%;}
+            /* .header .links  a {font-size: 34px;} */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">logo</div>
+        <div class="links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Contacts</a>
+        </div>
+    </div>
+    
+</body>
+</html>

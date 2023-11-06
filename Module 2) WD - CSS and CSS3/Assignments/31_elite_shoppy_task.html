@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite_shoppy_task</title>
+    <style>
+        *{box-sizing: border-box;}
+        .card
+        {
+            height: 350px;
+            width: 650px;
+            background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg);
+            background-size: 120% 120%;
+            /* padding: 45px; */
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-position: -20px 0;
+
+            transition: .4s;
+
+            border: 20px solid rgba(255,255,255,.23);
+
+            /* original background size transpretc karse dekhase */
+            background-origin: border-box;
+        }
+        .card-info
+        {
+            height: 250px;
+            width: 550px;
+            border: 9px solid #fff;
+            margin: auto;
+
+            color: #fff;
+            font-size: 24px;
+            font-family: cursive;
+
+            letter-spacing: 12px;
+
+            padding: 150px 0 0 200px;
+
+            /* opcity 0 means nathi dekhantu */
+            opacity: 0;
+
+            transform: translate(-8px,0);
+
+            transition: 0.4s;
+        }
+        .card:hover .card-info
+        {
+            opacity: 1;
+            transform: translate(0px,0);
+        }
+        .card:hover
+        {
+            background-position: 0px 0px;   
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-info">
+            New Arrivals
+        </div>
+    </div>
+
+</body>
+</html>

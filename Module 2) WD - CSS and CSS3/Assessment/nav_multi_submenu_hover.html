@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav 
+        {
+            /* height: 50px; */
+            background: lightcoral;
+            /* text-align: center; */
+            padding: 20px 0;
+        }
+        .x 
+        {
+            width: 80%;
+            background-color: aquamarine;
+            margin: auto;
+            position: relative;
+        }
+        .nav a 
+        {
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            font-weight:bold;
+            margin-right: 20px;
+            transition: .5s;
+            
+        }
+        /* .nav a::after
+        {
+            content: "";
+
+            height: 300px;
+            width: 500px;
+            background: #fff;
+            box-shadow: 0 0 20px gray;
+
+            position: absolute;
+            top:100%;
+            left:0;
+            opacity: 0;
+        }
+
+        .nav a:hover::after{
+            opacity: 1;
+        } */
+
+        .menu 
+        {
+           
+            height: 300px;
+            width: 500px;
+            background: #fff;
+            box-shadow: 0 0 20px gray;
+            display: flex;
+
+            position: absolute;
+            top:100%;
+            left:0;
+            /* visibility: hidden; */
+        }
+
+        .menu .cate
+        {
+           
+            height: 300px;
+            width: 30%;
+            background:lightcyan;
+
+            
+           
+           
+        }
+
+        .menu .cate-info
+        {
+           
+           height: 300px;
+           width: 70%;
+           background:lightgreen;
+
+           display: flex;
+           position:absolute;
+           top:0;
+           right:0;
+           visibility: hidden;
+         
+       }
+
+       
+       .menu .cate li:hover  .cate-info
+        {
+            visibility: visible;
+            /* position: relative; */
+        }
+
+       
+       .menu .cate-info .fashion-info
+       {
+            width: 50%;
+            height: 200px;
+            background: lightblue;
+
+            margin: 12px;
+
+       }
+
+       .nav a:hover .menu
+       {
+        visibility: visible;
+       }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="x">
+        <a href="">News
+
+            <div class="menu">
+                <div class="cate">
+                    <ul>
+                        <li>Fashion
+
+                            <div class="cate-info">
+                                <div class="fashion-info"> Fashion 1</div>
+                                <div class="fashion-info"> Fashion 1</div>
+                            </div>
+                           
+                        </li>
+                        <li>Technology
+
+                            <div class="cate-info">
+                                <div class="fashion-info">Tech 1</div>
+                                <div class="fashion-info"> Tech 1</div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    
+                </div>
+               
+            </div>
+
+        </a>
+
+        <a href="">Entertainment
+
+            <div class="menu">
+                <div class="cate">
+                    <ul>
+                        <li>Entertainment 1
+
+                            <div class="cate-info">
+                                <div class="fashion-info"> Entertainment 1</div>
+                                <div class="fashion-info"> Entertainment 1</div>
+                            </div>
+                           
+                        </li>
+                        <li>Entertainment 2
+
+                            <div class="cate-info">
+                                <div class="fashion-info">Entertainment 2</div>
+                                <div class="fashion-info"> Entertainment 2</div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    
+                </div>
+               
+            </div>
+
+        </a>
+
+        <a href="">News
+
+            <div class="menu">
+                <div class="cate">
+                    <ul>
+                        <li>Fashion
+
+                            <div class="cate-info">
+                                <div class="fashion-info"> Fashion 1</div>
+                                <div class="fashion-info"> Fashion 1</div>
+                            </div>
+                           
+                        </li>
+                        <li>Technology
+
+                            <div class="cate-info">
+                                <div class="fashion-info">Tech 1</div>
+                                <div class="fashion-info"> Tech 1</div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    
+                </div>
+               
+            </div>
+
+        </a>
+
+        <a href="">News
+
+            <div class="menu">
+                <div class="cate">
+                    <ul>
+                        <li>Fashion
+
+                            <div class="cate-info">
+                                <div class="fashion-info"> Fashion 1</div>
+                                <div class="fashion-info"> Fashion 1</div>
+                            </div>
+                           
+                        </li>
+                        <li>Technology
+
+                            <div class="cate-info">
+                                <div class="fashion-info">Tech 1</div>
+                                <div class="fashion-info"> Tech 1</div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    
+                </div>
+               
+            </div>
+
+        </a>
+       
+    </div>
+    </div>
+    
+</body>
+</html>

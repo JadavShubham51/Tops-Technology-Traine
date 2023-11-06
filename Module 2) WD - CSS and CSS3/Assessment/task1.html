@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		html,body
+		{	
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			background: linear-gradient(to right,coral 50%,blueviolet 50%);
+			background-size: cover;
+			align-items: center;
+		}
+		
+		.tran
+		{
+			height:450px;
+			width:450px;
+			background-color: darkblue;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+			position: relative;
+			
+			
+		}
+		.multi
+
+		{
+			position: absolute;
+			left: -200px;
+			top: -220px;
+			height:800px;
+			width: 850px;
+			background: linear-gradient(red 20%,blue,green,cyan,yellow,white);
+			transition:10s;
+			box-shadow: 0 0 50px rgba( 255, 255, 255, 0.2) inset;
+		}
+		
+		
+		.black
+		{
+
+			height:400px;
+			width:400px ;
+			background: black;
+			z-index: 1;
+
+			position: fixed;
+
+			
+			/* transform: translate(15px); */
+			
+			
+		 }  
+		 
+		.tran:hover .multi 
+		{
+
+			transform: rotate(360deg);
+		} 
+		
+		</style>
+</head>
+<body>
+	
+			
+		<div class="tran">
+			<div class="multi">		
+			</div>
+			
+		
+		<div class="black">
+					
+		</div>
+		</div>
+
+		 
+		
+	
+
+</body>
+</html>

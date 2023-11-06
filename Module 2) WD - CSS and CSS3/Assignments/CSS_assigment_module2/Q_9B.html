@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Internal css</title>
+
+	<style>
+		
+		p,h1,div
+		{
+			color: blue;
+		}
+
+		h1
+		{
+			color: red;
+
+		}
+		.x
+		{
+			color: yellow;
+
+		}
+		#x
+		{
+			color: darkred;
+		}
+		.y
+		{
+			font-size: 64px;
+		}
+		#y 
+		{
+			font-size: 44px;
+		}
+
+		.test
+		{
+			color: green !important;
+		}
+		
+
+	</style>
+</head>
+<body>
+
+	<p id="y" class="x test">this is para</p>
+	<p style="color: red;" class="test">this is para</p>
+	<p>this is para</p>
+	<p>this is para</p>
+
+	<h1 class="x y">heading h1</h1>
+	<h1>heading h1</h1>
+	<h1 id="x">heading h1</h1>
+
+	<div>div1</div>
+
+</body>
+</html>

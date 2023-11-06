@@ -1,0 +1,17 @@
+
+A==> Website:-A set of related web pages located under a single domain name,
+	   	  typically produced by a single person or organization.
+
+B==> Webpage:-A web page is a simple document displayable by a browser.
+		  Such documents are written in the HTML language.
+
+C==> Web Browser:-A web browser is application software for accessing websites.
+
+D==> Web Server:-A web server is software and hardware that uses HTTP (Hypertext Transfer Protocol) and
+		     other protocols to respond to client requests made over the World Wide Web.
+
+E==> HTML:-Hypertext Markup Language, HTML is the standard markup language for creating Web pages.
+	     HTML describes the structure of a Web page.
+
+F==> CSS:-Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML.
+	    CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.

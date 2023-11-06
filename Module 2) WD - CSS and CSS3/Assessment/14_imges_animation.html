@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image_animation</title>
+    <style>
+        *{box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+            position: relative;
+            /* animation: eye 2s linear; */
+        }
+        .brows1
+        {
+            height: 50px;
+            width: 400px;
+            /* background: blanchedalmond; */
+            transform: rotate(150deg);
+            border-bottom: 20px solid black;
+            border-radius: 50%;
+            position: absolute;
+            top: 200px;
+            left: 400px;
+        }
+        .brows2
+        {
+            height: 50px;
+            width: 400px;
+            /* background: blanchedalmond; */
+            border-top: 20px solid black;
+            border-radius: 50%;
+            transform: rotate(385deg);
+            position: absolute;
+            top: 200px;
+            right: 500px;
+        }
+        .eyes1
+        {
+            height: 400px;
+            width: 250px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 300px;
+            left: 500px;
+            
+            animation: eye 2s linear;
+        }
+        .eye1{
+            height: 150px;
+            width: 100px;
+            background: white;
+            border-radius: 50%;
+            margin: 150px;
+            animation: bro 3s linear 2s, bro1 3s linear 5s ;
+        }
+        .eyes2
+        {
+            height: 400px;
+            width: 250px;
+            background: black;
+            border-radius: 50%;
+            animation: eye 2s linear;
+            position: absolute;
+            top: 300px;
+            right: 600px;
+            animation: eye 2s linear;
+        }
+        .eye2{
+            height: 150px;
+            width: 100px;
+            background: white;
+            border-radius: 50%;
+            margin: 150px;
+            animation: bro 3s linear 2s , bro1 3s linear 5s ;
+        }
+        .smile
+        {
+            height: 100px;
+            width: 50%;
+            background: transparent;
+            border-bottom: 20px solid black;
+            border-radius: 50%;
+            position: absolute;
+            top: 750px;
+            left: 460px;
+        }
+        @keyframes eye{
+            from{transform: scaley(0.1);}
+            to{transform: scaley(1);}
+        }
+        @keyframes bro
+        {
+            to{margin-left: 0px;background: red;}
+        }
+        @keyframes bro1
+        {
+            from{margin-left: 0px;background: red;}
+            to{margin-left: 150px;background: rgb(204, 121, 204);}
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="brows1">
+
+    </div>
+    <div class="brows2">
+
+    </div>
+    <div class="eyes1">
+        <div class="eye1">
+
+        </div>
+    </div>
+    <div class="eyes2">
+        <div class="eye2">
+
+        </div>
+    </div>
+    <div class="smile"></div>
+</body>
+</html>

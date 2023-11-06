@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin</title>
+
+    <style>
+
+        .x
+        {
+            height: 100px;
+            width: 100px;
+            background: gray;
+            /* all side 45 px use that space margin */
+            /* margin: 45px;  */
+
+            /* TOP,BOTTOM,LEFT,RIGHT  USE*/
+            /* margin: 200px 0 50px 300px; */
+
+            /* top/bottom left/right use */
+            /* margin: 0px 20px; */
+
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 40px;
+            margin-right: 20px;
+        }
+        .y
+        {
+            height: 100px;
+            width: 100px;
+            background: gray;
+
+            /* margin auto all side use */
+            /* margin: auto; */
+
+            margin: 200px auto;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- margin means outside space  -->
+    <div class="x"></div>
+    <div class="y"></div>
+    <div class="z"></div>
+    <div class="p"></div>
+
+    <div class="left">left</div>
+    <div class="right">right</div>
+    <div class="clear">shuhiu</div>
+    
+</body>
+</html>

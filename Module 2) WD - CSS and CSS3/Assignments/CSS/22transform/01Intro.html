@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Transform</h3>
+    <p>The transform CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.</p>
+    <pre>
+        /* Keyword values */
+        transform: none;
+
+        /* Function values */
+        transform: matrix(1, 2, 3, 4, 5, 6);
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        transform: perspective(17px);
+        transform: rotate(0.5turn);
+        transform: rotate3d(1, 2, 3, 10deg);
+        transform: rotateX(10deg);
+        transform: rotateY(10deg);
+        transform: rotateZ(10deg);
+        transform: translate(12px, 50%);
+        transform: translate3d(12px, 50%, 3em);
+        transform: translateX(2em);
+        transform: translateY(3in);
+        transform: translateZ(2px);
+        transform: scale(2, 0.5);
+        transform: scale3d(2.5, 1.2, 0.3);
+        transform: scaleX(2);
+        transform: scaleY(0.5);
+        transform: scaleZ(0.3);
+        transform: skew(30deg, 20deg);
+        transform: skewX(30deg);
+        transform: skewY(1.07rad);
+    </pre>
+    <div class="row">
+
+        <style>
+            .row{
+                display: flex;
+            }
+            div{
+                height: 200px;
+                width: 300px;
+                margin: 10px;
+                /* background-color: olive; */
+            }
+            .box-matrix{
+                background-color: blueviolet;
+                /* transform: matrix(1, 2, 3, 4, 5, 6); */
+                transform:matrix(0.5, 0, 1.5, 0.5, 1.5, 1.5)
+            }
+        </style>
+        
+        <div class="box-matrix"></div>
+        <!-- <style>.box-rotate{transform: rotate(0.5turn);}</style>  -->
+        <style>
+        /* .box-rotate{ transition: all .2s; } */
+        .box-rotate{ transition: all 5s; background-color: purple; }
+        .box-rotate:hover{
+            transform: rotate(360deg);
+            /* transform: rotateX(360deg);
+            transform: rotateY(360deg); */
+            /* transform: rotateZ(360deg); */
+            }</style> 
+        <div class="box-rotate"></div> 
+        <style>
+        /* .box-rotate{ transition: all .2s; } */
+        .box-translate{ background-color: brown;transition: all 5s; }
+        .box-translate:hover{
+            
+            transform: translate(200px, 20%);
+            }</style> 
+        <div class="box-translate"></div> 
+        <style>
+        /* .box-rotate{ transition: all .2s; } */
+        .box-scale{ background-color: rgb(42, 165, 69);transition: all 1s; }
+        .box-scale:hover{
+            
+            transform: scale(2);
+            }</style> 
+        <div class="box-scale"></div> 
+        <style>
+        /* .box-rotate{ transition: all .2s; } */
+        .box-skew{ background-color: rgb(42, 165, 69);transition: all 1s; }
+        .box-skew:hover{
+            
+            transform: skew(30deg, 20deg);
+            }</style> 
+        <div class="box-skew"></div> 
+        <style>
+        /* .box-rotate{ transition: all .2s; } */
+        .box-multi{ background-color: rgb(165, 136, 42);transition: all 1s; }
+        .box-multi:hover{
+            transform: translateX(10px) rotate(10deg) translateY(5px);    
+        }</style> 
+        <div class="box-multi"></div> 
+    </div>
+  
+</body>
+</html>

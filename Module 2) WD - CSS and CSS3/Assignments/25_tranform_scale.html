@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform_scale</title>
+    <style>
+
+        .x
+        {
+            /* height: 100px;
+            width: 100px; */
+
+            height: 200px;
+            width: 200px;
+            background: black;
+            margin: 25px 0 100px 100px;
+        }
+
+        .y
+        {
+            height: 100px;
+            width: 100px;
+            background: red;
+            margin: 25px;
+            /* transform: scale() size in zoome and is visible */
+            transform: scale(1.2);
+            transition: 0.4s;
+        }
+        .y:hover{
+            transform: scale(1);
+        }
+        .z{
+            height: 100px;
+            width: 100px;
+            background: blue;
+            transform: matrix(0.7,-0.5,0.5,0.5,0.7);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="x"></div>
+    <div class="y"></div>
+    <div class="z"></div>
+
+</body>
+</html>

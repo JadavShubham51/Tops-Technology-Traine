@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .nav
+        {
+            height: 50px;
+            width: 100%;
+            /* background: black; */
+            display: flex;
+            margin-top: 20px;
+        }
+        .nav .first
+        {
+            height: inherit;
+            width: 50%;
+            background-color: gray;
+            /* border: 1px solid red; */
+            text-align: center;
+            /* line-height: 50px; */
+            /* margin: 4px; */
+            /* padding: 4px; */
+            word-spacing: 180px;
+
+            
+        }
+        .nav .first a
+        {
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            font-size: 40px;
+            /* text-align: center; */
+           /* color: white; */
+        }
+        .nav .second
+        {
+            height: inherit;
+            width: 30%;
+            background-color: gray;
+            /* border: 1px solid red; */
+            display: flex;
+        }
+        .nav .second .search
+        {
+            height: inherit;
+            width: 80%;
+            background-color: gray;
+            /* border: 1px solid green; */
+        }
+        
+        .nav .second .icon
+        {
+            height: inherit;
+            width: 20%;
+            background-color: green;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 50px;
+        }
+        .icon a{
+            
+            color: black;
+            font-size: 40px;
+            
+        }
+        .nav .third
+        {
+
+            height: inherit;
+            width: 20%;
+            background-color: gray;
+            /* border: 1px solid red; */
+            text-align: center;
+            line-height: 50px;
+        }
+        .nav .third a{
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            list-style: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="first">
+            <a href=""><i class="fa fa-cog" aria-hidden="true"></i></a>
+            <a href="">Application</a>
+            <a href="">Board</a>
+        </div>
+        <div class="second">
+            <div class="search">
+                <input type="search" placeholder="search" style="height: 50px; width: 100%;background-color: green;border: 1px solid green;">
+            </div>
+            <div class="icon">
+                <a href=""><i class="fa fa-search" id="sh"></i></a>
+            </div>
+        </div>
+        <div class="third">
+            <a href="">Option</a>
+        </div>
+    </div>
+</body>
+</html>

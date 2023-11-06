@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Task</title>
+    <style>
+        body,html
+        {
+            height: 100vh;
+            margin: 0;
+        }
+        .x
+        {
+            
+             height: 100%;
+
+            background: linear-gradient(rgba(239, 171, 87, 0.973),rgba(211, 153, 208, 0.54)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Hopetoun_falls.jpg/800px-Hopetoun_falls.jpg);
+            
+            /* background-image: url(https://www.pandotrip.com/wp-content/uploads/2018/07/San-Quirico-Val-d%E2%80%99Orcia-Tuscany-Italy.jpg); */
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+          
+        
+        }
+        .y
+        {
+            padding: 30px;
+
+            height: 400px;
+            width: 400px;
+            background-color: aliceblue;
+            /* margin: 250px auto; */
+            transform: translate(550px,150px);
+            /* margin: 100px; */
+            box-sizing: content-box;
+            border-radius: 10px;
+
+        }
+        input[type=text]:focus
+        {
+            border: none;
+            outline: none;
+            border-bottom: 2px solid red;
+        }
+
+        input[type=text]
+        {
+            background-color: aliceblue;
+            border: none;
+            border-bottom: solid gray;
+            width: 100%;
+            /* margin-left: 10px; */
+            
+        }
+        input[type=email]:focus
+        {
+            border: none;
+            outline: none;
+            border-bottom: 2px solid red;
+        }
+
+        input[type=email]
+        {
+            
+            border: none;
+            border-bottom: solid gray;
+            background-color: aliceblue;
+            width: 100%;
+            /* margin-left: 10px; */
+            
+        }
+        textarea[type=Message]:focus
+        {
+            border: none;
+            outline: none;
+            border-bottom: solid blue;
+        }
+        textarea[type=Message]
+        {
+            
+            border: none;
+            border-bottom: solid gray;
+            background-color: aliceblue;
+            width: 100%;
+            /* margin-left: 10px; */
+            
+        }
+        input[type=submit]
+        {
+            color: aliceblue;
+            background: linear-gradient(to right,rgb(162,59, 108),rgb(42, 82, 190));
+            align-items: center;
+            border-radius: 5px;
+            border: none;
+            padding: 10px 10px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="x">
+
+        <div class="y" >
+            <form action="" align="center">
+                <h1 align="center">Contact Us</h1><br><br>
+                
+                <input type="text" placeholder="name"><br><br>
+                
+                <input type="email" placeholder="email"><br><br>
+               
+                
+                <textarea type="Message"name="" id="" placeholder="Message" cols="30" rows="10" ></textarea><br><br>
+                <input type="submit" value="Send Your Message" style="text-align: center;">
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>

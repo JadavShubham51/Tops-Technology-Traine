@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box_layout</title>
+    <style>
+        *{box-sizing: border-box;margin: 0;padding: 0;scroll-behavior: smooth;}
+        .header
+        {
+            height:150px;
+            width: 100%;
+            background: gray;
+
+            display: flex;
+            /* position: fixed;
+            top:0; */
+
+        }
+        .header .logo
+        {
+            height:150px;
+            width: 20%;
+            background: lightgreen;
+            /* display: inline; */
+            /* float: left; */
+            text-align: center;
+            line-height: 150px;
+            
+        }
+        .header .cname
+        {
+            height:150px;
+            width:80%;
+            background: lightpink;
+            /* float: left; */
+        }
+        .nav
+        {
+            /* margin-top: 150px; */
+            /* height:50px; */
+            background: lightcoral;
+            text-align: center;
+            /* line-height: 50px; */
+            padding: 25px 0;
+        }
+        .nav ul li
+        {
+            display:  inline;
+            /* float: left; */
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        .nav ul li a
+        {
+            text-decoration: none;
+            color: #000;
+            background: gray;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+        .slider
+        {
+            height:550px;
+            background: gray;
+        }
+        .content
+        {
+            height:450px;
+            background: lightblue;
+            display: flex;
+        }
+        .content .x
+        {
+            height:450px;
+            width:25%;
+            border:1px solid;
+        }
+        .content .x .up
+        {
+            height:150px;
+            /* width:25%; */
+            border:1px solid red;
+        }
+        .content .x .down
+        {
+            height:300px;
+            /* width:25%; */
+            border:1px solid green;
+        }
+        .footer
+        {
+            height:150px;
+            background: gray;
+        }
+
+        .top 
+        {
+            height: 50px;
+            width: 150px;
+            background: linear-gradient(red,blue);
+           
+            text-align: center;
+            line-height: 50px;
+            
+            border-radius: 40px;
+
+            position: fixed;
+            bottom: 20px;
+            right:20px;
+        }
+        .top a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header" id="">
+
+            <div class="logo">logo</div>
+            <div class="cname">Company name</div>
+
+    </div>
+    <div class="nav">
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="slider">Slider</div>
+
+    <div class="content">
+        <div class="x">div1 </div>
+        <div class="x">
+
+            <div class="up">up</div>
+            <div class="down">down</div>
+
+
+        </div>
+        <div class="x">div3 </div>
+        <div class="x">div4 </div>
+    </div>
+
+    <div class="content" id="about">
+        <div class="x">div1 About</div>
+        <div class="x">
+
+            <div class="up">up</div>
+            <div class="down">down</div>
+
+
+        </div>
+        <div class="x">div3 </div>
+        <div class="x">div4 </div>
+    </div>
+
+
+    <div class="content" id="services">
+        <div class="x">div1 Services </div>
+        <div class="x">
+
+            <div class="up">up</div>
+            <div class="down">down</div>
+
+
+        </div>
+        <div class="x">div3 </div>
+        <div class="x">div4 </div>
+    </div>
+
+
+    <div class="content">
+        <div class="x">div1 </div>
+        <div class="x">
+
+            <div class="up">up</div>
+            <div class="down">down</div>
+
+
+        </div>
+        <div class="x">div3 </div>
+        <div class="x">div4 </div>
+    </div>
+
+    <div class="footer" id="contact">Footer</div>
+
+
+    <div class="top"> <a href="#header">Go to Top</a> </div>
+    
+</body>
+</html>

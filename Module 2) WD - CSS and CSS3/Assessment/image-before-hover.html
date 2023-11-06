@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image</title>
+    <style>
+        .main
+        {
+            height: 400px;
+            width: 800px;   
+            background: url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_1.jpg);
+           
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: white;
+           
+            margin: 100px auto;
+            text-align: center;
+            line-height: 400px;
+            font-size: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .main::after
+        {
+            content: "";
+            height: 400px;
+            width: 800px;
+            background-color: rgba(0,0,0,0.1);
+            position: absolute;
+            top: -400px;
+            right: -800px;
+            opacity: 0;
+            transition: 0.7s;
+        }
+        .main::before
+        {
+            content: "";
+            height: 400px;
+            width: 800px;
+            background-color: rgba(0,0,0,0.1);
+            position: absolute;
+            top: 400px;
+            right:800px;
+            opacity: 0;
+            transition: 0.7s;
+        }
+        .main:hover::after
+        {
+            top: 0px;
+            right: 0px;   
+            opacity: 1;
+        }
+        .main:hover::before
+        {
+            top: 0px;
+            right: 0px;  
+            opacity: 1; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        Flat <span style="color: rgb(65, 175, 212);">50%</span> Offer
+    </div>
+    
+</body>
+</html>

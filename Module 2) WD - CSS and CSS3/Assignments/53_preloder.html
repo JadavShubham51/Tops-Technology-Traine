@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{box-sizing: border-box;}
+        .x 
+        {
+            height: 200px;
+            width: 200px;
+            background: transparent;
+
+            margin: 200px auto;
+
+            border: 10px solid transparent;
+            border-top: 10px solid lightblue;
+            padding: 15px;
+
+            border-radius: 50%;
+
+            animation: preloader 1s linear infinite;
+           
+
+        }
+
+        .y
+        {
+            height: 150px;
+            width: 150px;
+            background: transparent;
+
+            border: 10px solid transparent;
+            border-top: 10px solid lightcoral;
+            padding: 15px;
+
+            border-radius: 50%;
+
+            animation: preloader 2s linear infinite;
+        }
+
+        .z
+        {
+            height: 100px;
+            width: 100px;
+            background: transparent;
+
+            border: 10px solid transparent;
+            border-top: 10px solid lightgreen;
+            padding: 15px;
+
+            border-radius: 50%;
+            animation: preloader 3s linear infinite;
+        }
+
+        .a
+        {
+            height: 50px;
+            width: 50px;
+            background: transparent;
+
+            border: 10px solid transparent;
+            border-top: 10px solid lightsalmon;
+            border-radius: 50%;
+            animation: preloader 4s linear infinite;
+        }
+
+        @keyframes preloader
+        {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="x">
+
+        <div class="y">
+
+            <div class="z">
+                <div class="a"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    
+</body>
+</html>
