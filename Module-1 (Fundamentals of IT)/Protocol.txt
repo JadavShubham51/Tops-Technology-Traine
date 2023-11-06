@@ -1,0 +1,1 @@
+protocol :- means to protocol https,tcp,etc. that is use network area is used.

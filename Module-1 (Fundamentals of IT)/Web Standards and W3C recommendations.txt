@@ -1,0 +1,1 @@
+The World Wide Web Consortium (W3C) develops international Web standards: HTML, CSS, and many more. W3C’s Web standards are called W3C Recommendations. All W3C standards are reviewed for accessibility support by the Accessible Platform Architectures (APA) Working Group.

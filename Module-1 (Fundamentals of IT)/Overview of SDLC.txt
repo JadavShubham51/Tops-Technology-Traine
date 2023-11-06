@@ -1,0 +1,20 @@
+ Overview of SDLC :- 
+
+--> SDLC means Software Development Life Cycle 
+--> its structured process that is used to design,develop, and test good-quality software. its is step-by-step.
+->The Software Development Life Cycle (SDLC) is basically a cost-effective process that is used to design and build good software. It is a time-efficient process.
+
+1) Planning :- website planning its used
+
+2) Defining/requriment:- what is requriment target get approval from customers, market 	analysis, and staleholder
+
+3)Designing Architecture:- best designing 
+
+4) Developing Product:- develoment product in progaming 
+	This is Two part developing frontend-developer and backend-developer
+	
+5) Product Testing and Integration
+
+6) Deployment and Maintenance of Products
+
+

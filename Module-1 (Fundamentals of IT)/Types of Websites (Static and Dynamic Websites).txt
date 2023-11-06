@@ -1,0 +1,9 @@
+Types of Websites (Static and Dynamic Websites)
+
+static :- we can not change the website data. mainuly.
+	It is faster to load as compared to dynamic website.
+	HTML,CSS,JAVASCRIPT 
+
+Dynamic :- we can change the website data. like Flipkart,amozon
+	Its is slower than static website.
+	PHP,NODE.js 

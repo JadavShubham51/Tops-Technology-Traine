@@ -1,0 +1,17 @@
+Client-side scripting language:-
+
+Web browsers execute client-side scripting. It is used when browsers have all code. Source code is used to transfer from webserver to user’s computer over the internet and run directly on browsers. It is also used for validations and functionality for user events. 
+1) Source code is visible to the user.
+2) It usually depends on the browser and its version.
+3) It runs on the user's computer.
+4) It does not provide security for data.
+5) HTML,CSS and Javascript are used.
+
+server-side scripting language:-
+
+Web servers are used to execute server-side scripting. They are basically used to create dynamic pages. It can also access the file system residing at the webserver. A server-side environment that runs on a scripting language is a web server. 
+1) Source code is not visible to the user because its output of server-sideside is an html page.
+2) In this any server-side technology can be used and it does not depend on the client.
+3) It runs on the webserver.
+4) It Provides more security for data.
+5) PHP,python,java,Ruby are used.

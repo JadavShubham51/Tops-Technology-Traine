@@ -1,0 +1,7 @@
+Domain :-
+1) A domain is an address Where Internet users can access your website.
+2) It's name registered in the DNS universally identidied by Web servers and online organizations.
+
+Hosting :- 
+1) Web hosting is a service that allows your website to be accessible to the World Wide Web.
+2) Web Hosting is having a space online to house your website and serve your website and serve visitors who come looking.

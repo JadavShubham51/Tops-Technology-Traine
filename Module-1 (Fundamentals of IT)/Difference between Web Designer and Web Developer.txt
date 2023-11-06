@@ -1,0 +1,15 @@
+web Designer : -
+	1) Web designers are usually creative in Nature.
+	2) Web design refers to the aesthetic elemets of a website.
+	3) They transform ideas into visually appealing designs.
+	4) Web design refers to how to website looks and feels on the outside.
+	5) Web designing tools include adobe Photoshop, Lllustrator,sketch,etc.
+
+Web developer :-
+	1) web developers are more technical in nature.
+	2) web development refers to building user-friendly website based on client's 	specifications.
+	3) They transform those designs into fully functional websites.
+	4) Web development refers to the functionality of the website on how it works.
+	5) languages used are PHP, HTML, JavaScript, CSS, ColdFusion, Python, Ruby, 	jQuery,etc.
+ 
+
