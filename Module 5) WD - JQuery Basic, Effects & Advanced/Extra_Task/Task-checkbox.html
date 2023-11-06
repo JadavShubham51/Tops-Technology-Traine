@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkbox Selection</title>
+    
+</head>
+<body>
+
+    
+    <label><input type="checkbox" id="selectAll"> Select All</label>
+    <br>
+    <input type="checkbox" class="checkbox"> Checkbox 1
+    <br>
+    <input type="checkbox" class="checkbox"> Checkbox 2
+    <br>
+    <input type="checkbox" class="checkbox"> Checkbox 3
+    <br>
+    <input type="checkbox" class="checkbox"> Checkbox 4
+    <br>
+    <input type="checkbox" class="checkbox"> Checkbox 5
+    <br>
+    <input type="checkbox" class="checkbox"> Checkbox 6
+</body>
+<script>
+
+const selectAllCheckbox = document.getElementById('selectAll');
+const checkboxes = document.querySelectorAll('.checkbox');
+
+// // Add a click event listener to the "Select All" checkbox
+// selectAllCheckbox.addEventListener('click', function () {
+//     checkboxes.forEach(checkbox => {
+//         checkbox.checked = selectAllCheckbox.checked;
+//     });
+// });
+
+// // Add click event listeners to individual checkboxes
+// checkboxes.forEach(checkbox => {
+//     checkbox.addEventListener('click', function () {
+//         // Check if all checkboxes are selected
+//         const allCheckboxesSelected = [...checkboxes].every(checkbox => checkbox.checked);
+        
+//         // Update the "Select All" checkbox based on the individual checkboxes' states
+//         selectAllCheckbox.checked = allCheckboxesSelected;
+//     });
+// });
+
+
+    selectAllCheckbox.addEventListener('click',function(){
+        checkboxes.forEach(check =>{
+            check.checked = selectAllCheckbox.checked
+        })
+    })
+
+    checkboxes.forEach(check=>{
+        check.addEventListener('click',function(){
+            const selectcheck = [...checkboxes].every(check=>check.checked)
+
+            selectAllCheckbox.checked = selectcheck;
+        })
+    })
+
+</script>
+
+<!-- $(document).ready(function(){
+    $("button").click(function(){
+        $("p").hide();
+    })
+}) -->
+
+<!-- $(document).ready(function(){
+    $("button").click(function(){
+        $("p").hide();
+    })
+}) -->

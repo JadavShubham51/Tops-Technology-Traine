@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+        *{box-sizing: border-box;margin: 0;padding: 0;}
+        .main 
+        {
+            height: 150px;
+            width: 100%;
+            background: gray;
+            display: flex;
+        }
+
+        .main .logo 
+        {
+            height: 150px;
+            width: 30%;
+            background: lightblue;
+        }
+
+        .main .cname
+        {
+            height: 150px;
+            width: 70%;
+            background: coral;
+        }
+
+        ul 
+        {
+            display: block;
+        }
+
+        span
+        {
+            display: none;
+        }
+        .hide
+        {
+           /* color:red; */
+           display: block;
+        }
+
+        @media(max-width:700px)
+        {
+            ul{display: none;}
+            span{display: block;}
+        }
+    </style>
+
+</head>
+<body>
+
+        <div class="main">
+            <div class="logo">logo</div>
+            <div class="cname">
+
+                <span id="bars" ><i class="fa fa-bars"></i></span>
+                <ul id="links">
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+
+            // links = document.getElementById('links');
+
+            $('#bars').click(function(){
+                // links.classList.toggle('hide');
+                $('#links').toggleClass('hide')
+            })
+
+        </script>
+
+    
+</body>
+</html>
