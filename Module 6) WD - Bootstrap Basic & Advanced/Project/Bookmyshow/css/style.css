@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#a-color{
+    color: red;
+    text-transform: uppercase;
+}
+.ul-movie li{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid;
+    border-radius:20px ;
+}
+.ul-movie li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+.ul-movie li a:hover{
+    color: red;
+}
+.ul-movies{
+    list-style: none;
+}
+.ul-movies .li-movie{
+    margin: 10px 0;
+}
+.ul-movies .li-movie a{
+    text-decoration: none;
+    color: black;
+}
+.offcanvas-lilist{
+    font-size: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.offcanvas-lilist h6,p{
+    font-size: 15px;
+}
+/* primere section */
+.Premiere{
+    background-color: rgb(43, 49, 72);
+}
+.primeres-img img{
+    border-radius: 10px;
+}
+
+/* sec2 -silder */
+.img{
+    height: 400px;
+    margin: 10px 0;
+}
+.text-contain{
+    margin: 20px 0;
+}
+.img img{
+    border-radius:30px; 
+}
+footer{
+    background-color: rgb(51,51,56);
+    
+}
+.cu{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+.cu .svg{
+    width: 50px;
+    margin: auto;
+}
+.foot-ul{
+    margin: 15px 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+
+.foot-ul .foot-li{
+    padding:0 10px;
+    margin: 5px;
+    border-right: 2px solid rgba(244, 240, 240, 0.5);
+}
+.foot-ul .foot-li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: rgba(244, 240, 240, 0.5);
+}
+
+.book-img{
+    width: 20%;
+    margin: 0 auto;
+    position: relative;
+}
+.book-img::after{
+    
+    content: "";
+    height: 1px;
+    width: 200%;
+    position: absolute;
+    background-color: lightblue;
+    left: 100%;
+    top: 50%;
+    
+}
+.book-img::before{
+    
+    content: "";
+    height: 1px;
+    width: 200%;
+    position: absolute;
+    background-color: lightblue;
+    right: 100%;
+    top: 50%; 
+}
+.e-img img{
+    border-radius: 10%;
+}
+.footer-icon{
+    margin: 0 auto;
+    width: 25%;
+    
+}
+.footer-icon a svg{
+    width: 15%;
+    text-align: center;
+}
+.footer-icon a svg:hover{
+    background-color: rgba(244, 240, 240, 0.5);
+}
