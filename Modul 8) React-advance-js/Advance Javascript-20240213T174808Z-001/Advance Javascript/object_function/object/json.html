@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+	
+	<!--
+	
+	JSON is a format for storing and transporting data.
+	JSON is often used when data is sent from a server to a web page.
+
+	What is JSON?
+	JSON stands for JavaScript Object Notation
+	JSON is a lightweight data interchange format
+	JSON is language independent *
+	JSON is "self-describing" and easy to understand
+	* The JSON syntax is derived from JavaScript object notation syntax,
+	 but the JSON format is text only. Code for reading and 
+	 generating JSON data can be written in any programming language.
+	
+	"json"={"name":"raj","email":"raj@gmail.com","age":"10"}
+	
+	{
+		"employees":[
+		  {"firstName":"John", "lastName":"Doe"},
+		  {"firstName":"Anna", "lastName":"Smith"},
+		  {"firstName":"Peter", "lastName":"Jones"}
+		]
+	}
+	
+	-->
+    <script>
+     
+	 //json
+	 var json=`{"name":"raj","email":"raj@gmail.com","age":"10"}`;
+     console.log(json); 
+	 
+	 //var obj={name:"raj",email:"raj@gmail.com",age:"10"};
+     //console.log(obj);
+	  
+	 var obj=JSON.parse(json);  // convert jason to object
+	 console.log(obj); 
+	 document.write(obj.name  +","+ obj.email +","+ obj.age); 
+	 
+	 var arr_json=`[
+		  {"firstName":"John", "lastName":"Doe"},
+		  {"firstName":"Anna", "lastName":"Smith"},
+		  {"firstName":"Peter", "lastName":"Jones"}
+		]`;
+	
+	 var arr_obj=JSON.parse(arr_json);
+	 console.log(arr_obj);
+	 
+	 for(data of arr_obj)
+	 {
+		document.write("<h1>" + data.firstName  +" "+ data.lastName + "</h1>");
+	 }
+	 
+	 
+	 // object to json
+	 
+	 
+	 var again_json=JSON.stringify(arr_obj);
+	 console.log(again_json);
+	 
+	 
+	 // json to object from API https://jsonplaceholder.typicode.com/
+	 
+	 fetch(`https://jsonplaceholder.typicode.com/posts`)
+      .then(response => response.json())
+      .then((object) => {
+		
+		//console.log(object)
+		 for(data of object)
+		 {
+			document.write("<h1>" + data.id  +" "+ data.title + "</h1>");
+		 }
+	  
+	  })
+	 
+	 
+	 
+	 
+    </script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<script>
+
+
+// class abc
+// {
+// 	constructor(a,b)
+// 	{
+// 		this.a=a;
+// 		this.b=b;
+// 	}
+// 	sum() 
+// 	{
+// 		document.write(this.a+this.b +"<br>");
+// 	}
+// 	multi()
+// 	{
+// 		document.write(this.a*this.b +"<br>");
+// 	}
+// 	sub()
+// 	{
+// 		document.write(this.a-this.b +"<br>");
+// 	}
+// }
+// var obj=new abc(5,10);
+
+// obj.sum();
+// obj.multi();
+// obj.sub();
+
+
+
+
+	class abc
+	{
+		constructor(a,b)
+		{
+			this.a=a;
+			this.b=b;
+		}
+		sum() 
+		{
+			document.write(this.a+this.b +"<br>");
+		}
+		multi()
+		{
+			document.write(this.a*this.b +"<br>");
+		}
+		
+	}
+	class xyz extends abc
+	{
+		constructor(a,b,c)
+		{
+			super(a,b);
+			this.c=c;
+		}
+		total()
+		{
+			document.write(this.a+this.b+this.c +"<br>");
+		}
+	}
+
+	var obj=new xyz(5,10,8);
+	obj.sum();
+	obj.multi();
+	obj.total();
+</script>
+
+

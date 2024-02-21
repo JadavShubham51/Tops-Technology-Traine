@@ -1,0 +1,50 @@
+
+<h2 id="demo"></h2>
+
+<script>
+setTimeout(myGreeting, 5000);
+
+function myGreeting() 
+{
+  document.getElementById("demo").innerHTML = "Happy Birthday!"
+}
+
+</script>
+
+<h2 id="time"></h2>
+
+
+<script>
+setInterval(displayHello, 1000);
+
+function displayHello() 
+{
+  var today = new Date();
+  var time = (today.getHours()) + ":" + today.getMinutes() + ":" + today.getSeconds();
+  document.getElementById("time").innerHTML = time;
+ 
+}
+
+
+</script>
+
+
+<h2 id="timer">60</h2>
+
+
+<script>
+setInterval(mytimer, 1000);
+
+function mytimer() 
+{
+  var value =  document.getElementById("timer").innerHTML;
+  value--;
+  if(value>=1)
+  {
+  document.getElementById("timer").innerHTML = value;
+  }
+  
+}
+
+
+</script>
