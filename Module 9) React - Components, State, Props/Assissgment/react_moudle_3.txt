@@ -1,0 +1,57 @@
+
+Q-1 => What is ReatJS?
+A.1=> React is a JavaScript library created by Facebook
+	React is a free and open-source front-end JavaScript library
+	React is a User Interface (UI) library.
+	React is a tool for building UI components.
+
+Q-2 =>  What is NPM in React Js?
+A-2 => npm is the world's largest Software Library (Registry)
+	npm is also a software Package Manager and Installer
+	The name npm (Node Package Manager) stems from when npm first was created as a 	package manager for Node.js.
+
+Q-3 =>  What is Role of Node Js in react Js? 
+A-3 => NodeJS is a framework of JavaScript which is mainly used for working with the 	backend of our application or building the backend using JavaScript, whereas ReactJS 	is a JavaScript front-end library. It is mainly used for building the user interface 	or the frontend of our application.
+
+Q-4 =>  What is CLI command In React Js?
+A-4 => Command Line Interface
+	Command Line Interpreter
+	Command Line Input.
+	It will be similar to how the create-react-app works in that you can run it 	using npx or just install it as a global package.
+
+Q-5 =>  What is Components in React Js? 
+A-5 => A Component is one of the core building blocks of React. In other words, we 	can say that every application you will develop in React will be made up of 	pieces called components.
+	Two type of compnent:-
+	1=> Class Components:- The class components are a little more complex than the 	functional components.
+	Ex.
+	class Democomponent extends React.Component
+	{
+    	render(){
+          return <h1>Welcome Message!</h1>;
+    		}
+	}
+	
+	2=> Functional Components:- Functional components are simply javascript 	functions. We can create a functional component in React by writing a 	javascript function.
+	Ex.
+	const Democomponent=()=>
+	{
+    		return <h1>Welcome Message!</h1>;
+	}
+
+Q-6 =>  What is Header and Content Components in React Js?
+A-6 =>  Headers are compositions that extend standard navbar functionalities. They contain 	additional components like a jumbotron, sub-navbar, or image covers which serve as a 	containers for extra navigation elements - usually links, forms, or call-to-action 	buttons.	
+	
+	Components are independent and reusable bits of code. They serve the same purpose as 	JavaScript functions, but work in isolation and 	return HTML. Components come in 	two types, Class components and Function components.
+
+Q-7 =>How to install React Js on Windows, linux Operating System? How 
+to install NPM and How to check version of NPM? 
+A-7 =>  first step to install nodejs in windows and check the command Prompt
+	 npm --version that version find.
+
+Q-8 =>  How to check version of React Js?
+A-8 => first to command Prompt open and check npm view react version and find it.
+
+Q-9 =>  How to change in components of React Js?
+A-9 =>  To change a value in the state object, use the this. setState() method. When a v	alue in the state object changes, the component will re-render, meaning that 	the 	output will change according to the new value(s).
+
+
