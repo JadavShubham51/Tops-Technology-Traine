@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "john_doe",
+      "email": "john@example.com",
+      "password": "password123",
+      "status": "block",
+      "mobile": "9827651245"
+    },
+    {
+      "id": "2",
+      "username": "john_doe",
+      "email": "john@example.com",
+      "password": "password123",
+      "status": "block",
+      "mobile": "9827651455"
+    },
+    {
+      "id": "3",
+      "username": "john_does",
+      "email": "john@example.com",
+      "password": "password123",
+      "status": "block",
+      "mobile": "9826551245"
+    },
+    {
+      "id": "1710150250628",
+      "username": "sujal",
+      "email": "jadavshubham5@gmail.com",
+      "password": "2345d",
+      "mobile": "09824024708",
+      "status": "Unblock",
+      "Password": "6"
+    }
+  ],
+  "contacts": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "phone": "123-456-7890",
+      "city": "Gwenborough"
+    },
+    {
+      "id": "2",
+      "name": "Dome_Sf",
+      "email": "Demo@example.com",
+      "phone": "242-456-7890",
+      "city": "Wisokyburgh"
+    }
+  ]
+}
