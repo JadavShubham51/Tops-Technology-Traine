@@ -1,0 +1,38 @@
+$bg-color:red;
+$text-color:lightcoral;
+
+
+.h1{
+    color: $text-color;
+}
+
+li{
+    a{
+        font: {
+        size: 56px;
+        };
+    }
+    color: $bg-color;
+}
+
+
+.button-basic  {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: lightgray;
+    margin: 0px 2px;
+  }
+
+.btn-green{
+    @extend .button-basic;
+    background-color: green;    
+    
+}
+.btn-orange{
+    @extend .button-basic;
+    background-color: orange;
+}
