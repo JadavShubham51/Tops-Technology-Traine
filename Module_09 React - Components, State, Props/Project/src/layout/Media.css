@@ -1,0 +1,126 @@
+@media only screen and (max-width: 1000px) {
+    .na{
+       display: none;
+    }
+    .navh{
+        display: none;
+    }
+    .nav1{
+        list-style: none;
+    }
+    .nav1 a{
+        text-decoration: none;
+        color: black;
+    }
+    .navv{
+        background-color: #f2eee8;
+        display: block;   
+        transform: .6s;
+    }
+    .why{
+        display: block;
+        font-size: 15px;
+    }
+    .modal-body{
+        background-color: #f2eee8;
+    }
+    .modal-body .accordion-item{
+        background-color: #f2eee8;
+        border: 0;
+    }
+    .modal-body .accordion-item button{
+        background-color: #f2eee8;
+    }
+    .modal-body .price{
+        list-style: none;
+    }
+    .modal-body .price a{
+        text-decoration: none;
+        color: black;
+    }
+    .modal-footer{
+        background-color: #f2eee8;
+    }
+    .n{
+        display: block;
+    }
+    .n a{
+        color: black;
+        text-decoration: none;
+    }
+    .product h2{
+        font-size: 30px;
+    }
+    .dropbox h1{
+        font-size: 25px;
+    }
+    .dropbox h5{
+        font-size: 20px;
+    }
+    .soical h2{
+        font-size: 25px;
+    }
+    .sliders h2{
+        font-size: 28px;
+    }
+    .sliders h2 br{
+        display: none;
+    }
+    .main
+    {
+        display: block!important;
+    }  
+    .main img{
+        width: 100%!important;
+    }
+    .main .info{
+        height: 200%!important;
+        width: 100%!important;
+    }
+    .main .info .info1{
+        font-size: 20px!important;
+        padding-bottom:60px!important ;
+        /* margin-bottom: 60px!important; */
+    }
+    .main .info a{
+        font-size: 20px!important;
+    }
+    .carousel-control-prev{
+     
+        height: 60px;
+        width: 60px;
+        
+    }
+    .carousel-control-next{
+    
+        height: 60px;
+        width: 60px;
+       
+    }
+    .slideri{
+        display: block!important;
+    }
+    .slideri h1{
+        font-size: 25px!important;
+    }
+    .slideri button{
+        width: 100%;
+        margin: 20px auto!important;
+    }
+
+    /* Deskwork */
+    .desk3i{
+        width: 100%;
+    }
+    .desk3i img{
+        width: 100%;
+    }
+    .listd{
+        width: 100%!important;
+    }
+    #first{
+        position: static;
+        top: 0;
+        opacity: 1;
+    }
+} 
