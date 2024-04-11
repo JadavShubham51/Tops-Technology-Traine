@@ -1,0 +1,64 @@
+note :- Main Props How to driling and short to use UseContext Hook and easy driling path
+
+useContext hook:- form use to one componet to dircet last componets send not props drilling thay use for usecontext hooks.
+
+-> this is use first as createcontext use as varible store and export varible name
+	this is variblename.provide use and the componet value={Statename}
+
+import React from 'react';  
+import Chida from './Chida';
+
+function Main_UseContext() {
+  return (
+    <div>
+      <h1>Hi i am use for usecontext </h1>
+      <Chida/>
+    </div>
+  )
+}
+
+export default Main_UseContext;
+
+==> childa.jsx
+import React, { createContext, useState } from 'react'
+import ChildB from './ChildB';
+import ChildC from './ChildC';
+
+
+export const data1 = createContext();
+function Chida() {
+    const [name,setname] = useState("shubham");
+  return (
+    <div>
+        <data1.Provider value={{name,setname}} >
+            <h1>Hello i am child A:- {name}</h1>
+            <ChildB/>
+            <ChildC/>
+      </data1.Provider>
+    </div>
+  )
+}
+
+export default Chida;
+
+==> ChildC.jsx
+import React, { useContext } from 'react'
+// frist allways import in top data provider use 
+import { data1 } from './Chida';
+
+function ChildC() {
+    const {name,setname} = useContext(data1);
+  return (
+    <div>
+      <button onClick={()=>{setname("sujal")}}>click</button>
+       <h1>Hello i am child C:- {name}</h1>
+    </div>
+  )
+}
+
+export default ChildC;
+
+note this is use multiple value direct pass as props but usecontext hooks.
+
+
+

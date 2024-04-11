@@ -1,0 +1,88 @@
+note:- this is for props drilling becuse of on component to other component hight drillig isuess.
+
+==> main_drilling.jsx
+
+import React from 'react'
+import A from './A'
+
+function Main_driling() {
+  return (
+    <div>
+        <p>note:- this a props driling becuse of one component to other component hight driling parth so this use</p>
+      <h1>Hello i am Main_driling :</h1>
+      <A/>
+    </div>
+  )
+}
+
+export default Main_driling;
+
+==>A componet 
+	-> this is use form A to B To C and D so this parth so hard call it.
+
+import React, { useState } from 'react'
+import B from './B'
+
+function A() {
+    const [name,setname]=useState("shubham")
+  return (
+    <div>
+        <button onClick={()=>{setname("Shubham jadav")}}>chnage</button>
+      <h1>Hello i am A : {name}</h1>
+      <B name={name} setname={setname}/>
+    </div>
+  )
+}
+
+export default A;
+
+==>B component
+import React from 'react'
+import C from './C'
+
+function B({name,setname}) {
+  return (
+    <div>
+      <h1>Hello i am B :{name}</h1>
+      <C name={name} setname={setname}/>
+    </div>
+  )
+}
+
+export default B;
+
+==> c component
+import React from 'react'
+import D from './D'
+
+function C({name,setname}) {
+  return (
+    <div>
+      <h1>Hello i am C :</h1>
+      <D name={name} setname={setname} />
+    </div>
+  )
+}
+
+export default C;
+
+==> d componenet
+import React from 'react'
+
+function D({name,setname}) {
+  return (
+    <div>
+        <button onClick={()=>{setname("shubham jadav")}}>click</button>
+      <h1>Hello i am D : {name}</h1>
+    </div>
+  )
+}
+
+export default D;
+
+--> this more defult last componet direct not possible to d componet thay way props driling.
+
+
+
+
+

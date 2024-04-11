@@ -1,0 +1,114 @@
+==> How to created json server use for api ?
+--> thay whay json server use for self api creted 
+this following syntax.
+-->What is JSON Server?
+->JSON is an acronym for JavaScript Object Notation. JSON Server is a lightweight and easy-to-use Node.js tool that simulates a RESTful API using a JSON file as the data source. With JSON Server, front-end developers can create mock APIs without the need to write complex server-side code, or when a backend API isn't ready yet.
+
+format for :- json
+1) array fromat
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "age": 25
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "age": 40
+  }
+]
+
+2) object with nested object format
+
+{
+  "users": {
+    "1": {
+      "name": "John Doe",
+      "age": 25
+    },
+    "2": {
+      "name": "Jane Smith",
+      "age": 30
+    }
+  }
+}
+
+
+->Features of JSON Server
+Here are some of the features of JSON Server:
+
+--->It is easy and quick to set up. It is also user-friendly for front-end developers and newbie 	back-end developers.
+--->It supports common HTTP methods like the GET, POST, PUT, and DELETE methods, just like a 	real backend API server would.
+--->With JSON Server, you can perform Create, Read, Update, Delete (CRUD) operations on data to 	build an interactive application.
+--->JSON Server offers developers the ability to create custom routes to handle more complex 	scenarios.
+
+-->
+Benefits of Using JSON Server
+Here are some of the benefits of using JSON Server:
+
+JSON Server grants front-end developers the ability to quickly create functional API prototypes that can be tested and modified while waiting for the backend server to be ready.
+Front-end developers can use JSON Server to simulate different scenarios, and error cases during testing to enhance their application.
+
+Step #1 - Install JSON Server
+
+npm install -g json-server
+
+step #2 - creted db.json file for out of src
+
+add json data
+==> as :- array format use 
+  {
+    "users": [
+      {
+        "id": 1,
+        "username": "john_doe",
+        "email": "john@example.com",
+        "password": "password123"
+      },
+      {
+        "id": 2,
+        "username": "Dome_Sf",
+        "email": "Demo@example.com",
+        "password": "password234"
+      },
+      {
+        "id": 3,
+        "username": "sfsaf_Sf",
+        "email": "sfsaf@example.com",
+        "password": "sfsaf23"
+      }
+
+    ],
+    "contacts": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john@example.com",
+        "phone": "123-456-7890",
+        "city": "Gwenborough"
+      },
+      {
+        "id": 2,
+        "name": "Dome_Sf",
+        "email": "Demo@example.com",
+        "phone": "242-456-7890",
+        "city": "Wisokyburgh"
+      }
+
+    ]
+  }
+
+step #3 - this is a package.json data in
+debug
+"script":{
+// this will created
+ "server":"json-server --watch db.json --port 3000"
+}
+
+ "server":"json-server --watch db.json --port 3000"
+
+step #4 - this time terminal cmd use as :- 
+npx json-server --watch db.json
+
+and then start npm server use port has been chnage 3001

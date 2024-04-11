@@ -1,0 +1,108 @@
+Porps:- props menas data pass from one component to ohter component but not change your data.
+
+--> func card one time created and props way to main component to call in many time
+--> same as class construcutor(props){super(props);this.data=props};
+
+1)function_prop.jsx
+
+import React from 'react'
+// Props as Data Pass in main file as component but funtion as a Parameters use
+
+const Func_Props = ({img,title,desc}) => {
+  return (
+    <div>
+        
+      <div className="col text-center">
+      <h1>Func</h1>
+            <div className="card">
+                <img className="card-img-top" src={img} alt="Card image" style={{ width: '150px',margin:"0 auto" }} />
+                <div className="card-body ">
+                    <h4 className="card-title">{title}</h4>
+                    <p className="card-text">{desc}</p>
+                    <a href="#" className="btn btn-primary">See Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export default Func_Props;
+
+2) Class_props.jsx
+
+import React, { Component } from 'react';
+// Props as Data Pass in main file as component but class as Constructor(props){super(props);this.data=props}
+class Class_Props extends Component {
+
+    constructor(props){
+        super(props);
+        this.data=props;
+    }
+    render() {
+        return (
+            <div>
+                <div className="col text-center">
+                <h1>Class </h1>
+                <div className="card">
+                    <img className="card-img-top" src={this.data.img} alt="Card image" style={{ width: '200px',margin:"0 auto" }} />
+                    <div className="card-body ">
+                        <h4 className="card-title">{this.data.title}</h4>
+                        <p className="card-text">{this.data.desc}</p>
+                        <a href="#" className="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        );
+    }
+}
+
+export default Class_Props;
+
+
+3) Props.jsx :- main component
+import React from 'react'
+import Header from '../Layout/Comomon_componet/Header'
+import Footer from '../Layout/Comomon_componet/Footer'
+import Class_Props from './Class_Props'
+import Func_Props from './Func_Props'
+
+function Props() {
+  return (
+    <div>
+        <Header/>
+        <div className='container'>
+            <div className="row">
+               <div className="col">
+               <Func_Props title="Gap" desc="Regular Fit Polo " img="https://assets.ajio.com/medias/sys_master/root/20230513/IT84/645fd57042f9e729d783402d/-473Wx593H-441777742-green-MODEL3.jpg" />
+                
+               </div>
+               <div className='col'>
+                <Func_Props title="Men" desc="Regulaer T-shits " img="https://th.bing.com/th/id/OIP.ajzgyucYixlSOJ04IwdnPgHaJ4?rs=1&pid=ImgDetMain" />
+                </div>
+                <div className='col'>
+                <Func_Props title="Gap" desc="Regular Fit" img="https://assets.ajio.com/medias/sys_master/root/20230203/7BwT/63dce33ff997dd708e36da5a/-473Wx593H-441777867-blue-MODEL.jpg" />
+                </div>
+                <div className="col">
+                <Func_Props title="Gap" desc="Striped Standard  Shirt" img="https://assets.ajio.com/medias/sys_master/root/20230502/rqZx/6450e7dfd55b7d0c638e6450/-473Wx593H-441777923-ltgreen-MODEL4.jpg" />
+                </div>
+                <hr />
+                <div className="col">
+                <Class_Props title="Gap" desc="High-Rise Logo Print Regular Fit Shorts" img="https://assets.ajio.com/medias/sys_master/root/20230601/rJfp/6478cbe3d55b7d0c63317e48/-473Wx593H-442029622-purple-MODEL4.jpg" />
+                </div>
+                <div className="col">
+                <Class_Props title="Gap" desc="Striped Crew-Neck T-Shirt" img="https://assets.ajio.com/medias/sys_master/root/20230808/q97L/64d25894eebac147fcb48f20/-473Wx593H-442110725-black-MODEL8.jpg" />
+                </div>
+                <div className="col"><Class_Props title="Gap" desc="Mid-Wash Low-Rise Denim Shorts" img="https://assets.ajio.com/medias/sys_master/root/20230808/COlA/64d26890eebac147fcb4eb62/-473Wx593H-442110611-mediumblue-MODEL6.jpg" /></div>
+
+
+            </div>
+        </div>
+      <Footer/>
+    </div>
+  )
+}
+
+export default Props
+

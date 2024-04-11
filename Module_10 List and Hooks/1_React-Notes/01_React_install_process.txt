@@ -1,0 +1,69 @@
+1) Node.js Packags to download
+
+2) Folder to cmd in install
+	step:-1) cmd :- npm create-react-app appname :- this is golbal app not multiple 	appliction apply.
+
+	step:-1) cmd :- npx create-react-app appname :- that case to multiple application 	perfrom. this is npm package runner
+
+3) cd means change directry folder :-
+	cd filename
+	step:-2) npm start
+
+4) react version react 16.5.2 
+	simple damuy app install react
+
+5) Is folder structure is main
+	First Folder :- node_modules
+	-> all file in install threre
+
+	secound folder :- Public folder
+	-> index.html file is main in this folder 
+	--> other is icon folder is use as well as
+	--->index.html :-
+		root id is important beacuse index is main
+		 <div id="root"></div>
+
+	Third Folder :-
+	-> index.js -> 
+	--> React component from componet control --> root.index.html file
+	--> this most used root to render method all component called
+
+	code .
+	import React from 'react';
+	import ReactDOM from 'react-dom/client';
+	import App from './App';
+
+
+	const root = ReactDOM.createRoot(document.getElementById('root'));
+	root.render(
+  		<React.StrictMode>
+    		<App />
+  		</React.StrictMode>
+	);
+	-> App.js
+	--> Mutiple file react elements 
+	
+	code .
+	import React from "react";
+
+	function App() {
+  	return (
+    		<div className="App">
+      		<>
+        		<h1>Hellos shubham</h1>
+      		</>
+    		</div>
+  	);
+	}
+
+	export default App;
+
+	--> 
+	App.test.js :- Simple Test Case
+	
+Mainly react folder in main file is node_module,index.html,App.js,index.js,package-lock.json,package.json
+
+
+	
+
+

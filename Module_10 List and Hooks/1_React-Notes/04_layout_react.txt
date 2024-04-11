@@ -1,0 +1,54 @@
+Compont:-
+there menas comon componet is reuse code in any component in pages
+Common_Component :- 
+	1) Header.jsx
+	import React from 'react';
+
+	function Header()
+	{
+		retrun(
+			<>
+			<h1>Header compononet</h1>
+			</>
+		)
+	}
+	export default Header;
+
+as well as Footer 
+
+
+Pages :- 
+Pages as multiple in website
+	1) Home.jsx
+	import React from "react";
+	import Header from '../Comomon_componet/Header'
+	import Footer from '../Comomon_componet/Footer'
+
+	
+	function Home() {
+  	return (
+    	<div>
+        	<Header/> 
+      		<h1> Home Componet <h1>
+      		<Footer/>
+    	</div>
+  	)
+	}
+	export default Home;
+
+	2) About.jsx
+	import React from "react";
+	import Header from '../Comomon_componet/Header'
+	import Footer from '../Comomon_componet/Footer'
+
+	
+	function About() {
+  	return (
+    	<div>
+        	<Header/> 
+      		<h1> About Componet <h1>
+      		<Footer/>
+    	</div>
+  	)
+	}
+	export default About;

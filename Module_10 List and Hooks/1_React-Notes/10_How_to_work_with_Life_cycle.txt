@@ -1,0 +1,168 @@
+Lifecycle :- all in function and class use
+
+/*
+
+Lifecycle of Components
+
+Each component in React has a lifecycle which you can monitor and manipulate during its 
+three main phases.
+
+The three phases are: Mounting, Updating, and Unmounting.
+
+componentDidMount(){} // birth// run when component ready to use
+
+componentDidUpdate(){} // marriage// run when any update in compo
+
+componentWillUnmount(){}// end // run when component remove
+
+
+*/
+
+---------------------------class Components lifecycle -------------------------------------
+
+import React, { Component } from 'react'
+import Life_img from './Life_img';
+
+export class Life_class extends Component {
+
+    componentDidUpdate()
+    {
+        console.log('hi i am componentDidUpdate');
+    }
+
+    constructor(){
+        super();
+        this.state={
+            name:"Raj nagar",
+            isImage:true
+        }
+    }  
+
+  render() {
+    return (
+      <div>
+        <h1>Life_class</h1>
+        <hr />
+        <button onClick={()=>this.setState({name:"Akash Nagar"})}>Change</button>
+        <h1>{this.state.name}</h1>
+
+        <hr />
+        <button onClick={()=>this.setState({isImage:false})}>Hide</button>
+        <button onClick={()=>this.setState({isImage:true})}>Show</button>
+        {this.state.isImage?<Life_img/>:null}
+            
+      </div>
+    )
+  }
+}
+export default Life_class
+
+==> this code use form  life_class use 
+
+import React, { Component } from 'react'
+
+export class Life_img extends Component {
+    
+    // component load/birth
+    componentDidMount() {
+        console.log('hi i am componentDidMount');
+    }
+
+    // component unload/death
+    componentWillUnmount(){
+        console.log('hi i am componentWillUnmount');
+    }
+
+    render() {
+        return (
+            <>
+            <div>Life_img</div>
+            <img src="https://topsint.com/topserp/images/logo-tops.png" alt="" />
+            </>
+        )
+    }
+}
+
+export default Life_img
+
+
+-----------------------------------function components -----------------------------------
+
+/*
+The useEffect Hook allows you to perform side effects in your components.
+
+Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+
+useEffect accepts two arguments. The second argument is optional.
+
+useEffect(<function>, <dependency>)
+
+*/
+
+
+import React,{useState,useEffect} from 'react'
+import Life_img from './Life_img'
+
+function Func_life() {
+
+    const [data,setData]=useState({
+        name:"Raj Nagar",
+        isImage:true,
+        number:1
+    });
+
+    // DidUpdate
+    useEffect(()=>{
+        console.log('Didmount Main / then update DidUpdate')
+    },[data.number]); 
+
+  return (
+    <div>
+        <h1>Life_Func</h1>
+        <hr />
+        <button onClick={()=>setData({...data,name:"Akash Nagar"})}>Change</button>
+        <h1>{data.name}</h1>
+
+        <hr />
+        <button onClick={()=>setData({...data,number:data.number+1})}>+</button>
+        <h1>{data.number}</h1>
+        <button onClick={()=>setData({...data,number:data.number-1})}>-</button>
+        
+        <hr />
+        <button onClick={()=>setData({...data,isImage:false})}>Hide</button>
+        <button onClick={()=>setData({...data,isImage:true})}>Show</button>
+        {data.isImage?<Life_img/>:null}
+            
+      </div>
+  )
+}
+
+export default Func_life;
+
+==> this code use form life_img componetes use form Fun_life
+
+import React, { useEffect } from 'react'
+
+function Life_img() {
+
+  // component load/birth
+  useEffect(() => {
+    console.log('DidMount')
+  }, []);
+
+
+  // component unload/death
+  useEffect(() => {
+    return (() => console.log('WillUnMount'))
+  }, []);
+
+  return (
+    <>
+      <div>Life_img</div>
+      <img src="https://topsint.com/topserp/images/logo-tops.png" alt="" />
+    </>
+  )
+}
+
+export default Life_img
+

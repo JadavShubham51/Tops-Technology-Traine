@@ -1,0 +1,74 @@
+-->step1 cmd :- json-server --watch db.json
+	start
+
+--> step2 cmd :- new terminal :- npm start
+--> step3 cmd install axios for api get : npm i axios
+
+---> dasboard :- use for
+	
+	useState hook use form data a
+	useEffect hook for api data get
+
+ ==> this code how to created?
+import React, { useEffect, useState } from "react";
+import AHeader from "../Comon_componet/AHeader";
+import AFooter from "../Comon_componet/AFooter";
+import axios from "axios";
+
+function Dashbord() {
+  const [data, setdata] = useState([]);
+
+  useEffect(() => {
+    fetch();
+  }, []);
+
+  const fetch = async () => {
+    const res = await axios.get(`http://localhost:3000/users`);
+    console.log(res);
+    setdata(res.data);
+  };
+
+  
+  return (
+    <div>
+      <AHeader />
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-12">
+            <h1 className="text-center">Manager Data</h1>
+            <table className="table table-dark table-striped table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">#ID</th>
+                  <th scope="col">username</th>
+                  <th scope="col">email</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data &&
+                  data.map((value, index, arr) => {
+                    return (
+                      <tr>
+                        <th scope="row">{value.id}</th>
+                        <td>{value.username}</td>
+                        <td>{value.email}</td>
+                        <td>
+                            <button className="btn btn-primary mx-2">Edit</button>
+                            <button className="btn btn-danger">Delete</button>
+                        </td>
+                      </tr>
+                    );
+                  })}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <AFooter />
+    </div>
+  );
+}
+
+export default Dashbord;
