@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "shubham",
+      "email": "shubhamjadav.tops@gmail.com",
+      "gender": "male",
+      "phone": "8775674764",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "name": "jigisha",
+      "gender": "Female",
+      "email": "jigisha12.tops@gmail.com",
+      "phone": "8775674764",
+      "password": "12345"
+    },
+    {
+      "id": "3",
+      "name": "sujal",
+      "gender": "male",
+      "email": "sujaljadav.tops@gmail.com",
+      "phone": "8775674764",
+      "password": "12346"
+    },
+    {
+      "id": "0295",
+      "name": "jignesh",
+      "email": "jigenshjadav34@gmail.com",
+      "phone": "36756756732",
+      "password": "2345",
+      "gender": "male"
+    },
+    {
+      "id": "64de",
+      "name": "jignesh",
+      "email": "jigenshjadav34@gmail.com",
+      "phone": "36756756732",
+      "password": "2345",
+      "gender": "male"
+    },
+    {
+      "id": "1204",
+      "name": "jignesh",
+      "email": "jigenshjadav34@gmail.com",
+      "phone": "36756756732",
+      "password": "2345",
+      "gender": "male"
+    },
+    {
+      "id": "20",
+      "name": "jignesh23",
+      "email": "jigenshjadav34@gmail.com",
+      "phone": "36756756732",
+      "password": "2345",
+      "gender": "male"
+    },
+    {
+      "id": "20",
+      "name": "jignesh2323",
+      "email": "jigenshjadav34@gmail.com",
+      "phone": "36756756732",
+      "password": "2345",
+      "gender": "male"
+    },
+    {
+      "id": "1718822990883",
+      "name": "safsaf",
+      "email": "jigenshjadav34@gmail.com",
+      "phone": "36756756732",
+      "password": "2345",
+      "gender": "male"
+    },
+    {
+      "id": "1718823005238",
+      "name": "safsaf",
+      "email": "jigenshjadav34@gmail.com",
+      "phone": "36756756732",
+      "password": "2345",
+      "gender": "female"
+    }
+  ]
+}
