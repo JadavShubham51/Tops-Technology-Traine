@@ -45,6 +45,23 @@ export const deleteUser = createAsyncThunk(
     }
 )
 
+// update function
+export const updateUser = createAsyncThunk(
+    "updateUser",async (data,{rejectWithValue})=>{
+        console.log("udapate data",data);
+        const respo = await axios.put(`http://localhost:3000/users/${data.id}`,data)
+
+        try {
+            const result = await respo.data;
+            return result;
+        } catch (error) {
+            return rejectWithValue(error)
+        }
+    }
+)
+
+
+
 export const userDetails= createSlice({
     name:"userDetail",
     initialState:{
@@ -114,6 +131,21 @@ export const userDetails= createSlice({
         .addCase(deleteUser.rejected, (state,action)=>{
             state.loading = false;
             state.error = action.payload
+        })
+
+        // update data
+        .addCase(updateUser.pending ,(state)=>{
+            state.loading = true;
+        })
+        .addCase(updateUser.fulfilled, (state,action)=>{
+            state.loading = false;
+            state.users = state.users.map((ele)=>(
+                ele.id === action.payload.id ? action.payload : ele
+            ))
+        })
+        .addCase(updateUser.rejected, (state,action)=>{
+            state.loading = false;
+            state.error = action.payload;
         })
 
     },

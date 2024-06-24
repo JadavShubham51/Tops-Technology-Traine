@@ -25,60 +25,12 @@
       "password": "12346"
     },
     {
-      "id": "0295",
-      "name": "jignesh",
-      "email": "jigenshjadav34@gmail.com",
-      "phone": "36756756732",
-      "password": "2345",
-      "gender": "male"
-    },
-    {
       "id": "64de",
-      "name": "jignesh",
-      "email": "jigenshjadav34@gmail.com",
-      "phone": "36756756732",
-      "password": "2345",
+      "name": "Jadav Shubham Jigneshbhaikh",
+      "email": "jadavshubham5@gmail.com",
+      "phone": "09824024708",
+      "password": "23",
       "gender": "male"
-    },
-    {
-      "id": "1204",
-      "name": "jignesh",
-      "email": "jigenshjadav34@gmail.com",
-      "phone": "36756756732",
-      "password": "2345",
-      "gender": "male"
-    },
-    {
-      "id": "20",
-      "name": "jignesh23",
-      "email": "jigenshjadav34@gmail.com",
-      "phone": "36756756732",
-      "password": "2345",
-      "gender": "male"
-    },
-    {
-      "id": "20",
-      "name": "jignesh2323",
-      "email": "jigenshjadav34@gmail.com",
-      "phone": "36756756732",
-      "password": "2345",
-      "gender": "male"
-    },
-    {
-      "id": "1718822990883",
-      "name": "safsaf",
-      "email": "jigenshjadav34@gmail.com",
-      "phone": "36756756732",
-      "password": "2345",
-      "gender": "male"
-    },
-    {
-      "id": "1718823005238",
-      "name": "safsaf",
-      "email": "jigenshjadav34@gmail.com",
-      "phone": "36756756732",
-      "password": "2345",
-      "gender": "female"
     }
   ]
 }

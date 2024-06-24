@@ -1,8 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteUser, showuser } from "../feature/userDetails";
+import { NavLink } from "react-router-dom";
 
 function Read() {
+
+  const [id,setid]= useState()
+
   const dispatch = useDispatch();
 
   const { users, loading } = useSelector((state) => state.app);
@@ -38,7 +42,7 @@ function Read() {
                     <td>
                         <button className="btn btn-success">View</button>
                         <button className="btn btn-danger mx-2" onClick={()=>dispatch(deleteUser(data.id))}>Delete</button>
-                        <button className="btn btn-primary">Edit</button>
+                        <NavLink  to={`/edit/${data.id}`} className="btn btn-primary">Edit</NavLink>
                     </td>
                   </tr>
                 );
